@@ -1,30 +1,35 @@
 <template>
-  <div class="home">
-    <div class="flex-container">
-        <div id="menu-container">
-            <img id="logo" src="" />
-            <h1>Karate-Do Bushidaikan</h1>
-            <button id="start-game-btn" class="btn btn-bushi">Quiz das posturas e técnias</button>
-            <button id="" class="btn btn-black">Quiz das palavras</button>
-        </div>
-
-        <div id="quiz-container">
-            <div id="question-container"></div>
-            <div id="options-container"></div>
-            <div id="result-container" style="display: none;"></div>
-            <button id="restart-btn" class="btn-question btn-reiniciar" style="display: none;">Reiniciar</button>
-            <button id="back-to-menu-btn" class="btn-question" style="display: none;">Voltar para o Início</button>
-        </div>
-    </div>
-  </div>
+  <v-container class="h-screen bg-padrao">
+    <v-row no-gutters>
+      <v-col cols="12">
+        <v-img width="300" :aspect-ratio="1" :src="getImagePath()"
+          cover></v-img>
+      </v-col>
+      <v-col class="text-center" cols="12">
+        <h2 class="mb-5">Karate-Do Bushidaikan</h2>
+      </v-col>
+    </v-row>
+    <v-row no-gutters>
+        <menu-principal/>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
+import MenuPrincipal from '../components/MenuPrincipal.vue';
 
 export default {
   name: 'HomeView',
   components: {
+    MenuPrincipal
+  },
+  methods: {
+    getImagePath() {
+      return require(`@/assets/images/logo.png`);
+    },
   }
 }
 </script>
+<style scoped>
+  
+</style>

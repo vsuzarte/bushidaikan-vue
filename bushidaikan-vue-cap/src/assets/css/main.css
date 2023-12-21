@@ -1,0 +1,25 @@
+.bg-padrao{
+  background: linear-gradient(45deg, #1a1a1a, #333333 50%, #1a1a1a);
+  color: #f5f5f5;
+}
+
+.btn {
+  font-weight: bolder;
+  border: none;
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-bushi{
+  background-color: #FBC920;
+  box-shadow: 0 5px black;
+}
+
+.btn-black{
+  color: white;
+  background-color: black;
+  box-shadow: 0 5px #FBC920;
+}
