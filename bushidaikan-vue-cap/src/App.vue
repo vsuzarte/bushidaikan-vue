@@ -1,16 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-container>
+    <v-row>
+      <v-col>
+        <v-card>
+          <v-card-title>Meu Primeiro Componente Vuetify</v-card-title>
+          <v-card-subtitle>Usando Vuetify no Vue.js</v-card-subtitle>
+          <v-card-text>
+            Bem-vindo ao Vuetify! Você pode começar a usar os componentes Vuetify aqui.
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
