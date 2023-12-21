@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Bushidaikan</string>
+    <string name="title_activity_main">Bushidaikan</string>
+    <string name="package_name">bushidaikan.karate.app</string>
+    <string name="custom_url_scheme">bushidaikan.karate.app</string>
+</resources>
