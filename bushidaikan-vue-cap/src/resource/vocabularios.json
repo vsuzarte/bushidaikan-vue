@@ -1,0 +1,32 @@
+[
+	{
+		"Id": 1,
+		"Palavra": "Kara",
+		"Traducao": "Vazio",
+		"Tipo": "A Arte Marcial"
+	},
+	{
+		"Id": 2,
+		"Palavra": "Te",
+		"Traducao": "Mão",
+		"Tipo": "A Arte Marcial"
+	},
+	{
+		"Id": 3,
+		"Palavra": "Do",
+		"Traducao": "Caminho",
+		"Tipo": "A Arte Marcial"
+	},
+	{
+		"Id": 4,
+		"Palavra": "Karatê-Do",
+		"Traducao": "Vazio",
+		"Tipo": "A Arte Marcial"
+	},
+	{
+		"Id": 5,
+		"Palavra": "Kara",
+		"Traducao": "Vazio",
+		"Tipo": "A Arte Marcial"
+	}
+]

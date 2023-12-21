@@ -1,0 +1,831 @@
+[
+  {
+    "Id": 1,
+    "Nome": "Soto-Hachiji Shizentai-Dachi",
+    "Imagem": "Tachi-Kata/Soto-Hachiji-Shizentai-Dachi",
+    "PosturaBR": "Postura Natural",
+    "PosturaJP": "Tachi Kata",
+    "Tipo": "Postura",  
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 2,
+    "Nome": "Migi-Ashi-Mae Shizentai-Dachi",
+    "Imagem": "Tachi-Kata/Migi-Ashi-Mae-Shizentai-Dachi",
+    "PosturaBR": "Postura Natural",
+    "PosturaJP": "Tachi Kata",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 3,
+    "Nome": "Hidari-Ashi-Mae Shizentai-Dachi",
+    "Imagem": "Tachi-Kata/Hidari-Ashi-Mae-Shizentai-Dachi",
+    "PosturaBR": "Postura Natural",
+    "PosturaJP": "Tachi Kata",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 4,
+    "Nome": "Heisoku-Dachi",
+    "Imagem": "Jun-Shizentei-Dachi/Heisoku-Dachi",
+    "PosturaBR": "Postura quase Natural",
+    "PosturaJP": "Jun Shizentei-Dachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": [ "Naihanchi Shodan" ]
+  },
+  {
+    "Id": 5,
+    "Nome": "Chokuritsu-Fudo-Dachi",
+    "Imagem": "Jun-Shizentei-Dachi/Chokuritsu-Fudo-Dachi",
+    "PosturaBR": "Postura quase Natural",
+    "PosturaJP": "Jun Shizentei-Dachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": [""]
+  },
+  {
+    "Id": 6,
+    "Nome": "Nekoashi-Dachi",
+    "Imagem": "Tachi/Nekoashi-Dachi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 7,
+    "Nome": "Jigotai-Dachi",
+    "Imagem": "Tachi/Jigotai-Dachi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 8,
+    "Nome": "Naihanchi-Dachi",
+    "Imagem": "Tachi/Naihanchi-Dachi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": [ "Naihanchi Shodan" ]
+  },
+  {
+    "Id": 9,
+    "Nome": "Zenkutsu-Dachi",
+    "Imagem": "Tachi/Zenkutsu-Dachi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 10,
+    "Nome": "Naname Zenkutsu-Dachi",
+    "Imagem": "Tachi/Naname-Zenkutsu-Dachi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 11,
+    "Nome": "Kokutsu-Dashi",
+    "Imagem": "Tachi/Kokutsu-Dashi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 12,
+    "Nome": "Kosa-Dachi",
+    "Imagem": "Tachi/Kosa-Dachi",
+    "PosturaBR": "Postura quase Natural",
+    "PosturaJP": "Jun Shizentei-Dachi",
+    "Tipo": "Postura",
+    "Faixas": ["Branca", "Cinza"],
+    "Katas": [ "Naihanchi Shodan" ]
+  },
+  {
+    "Id": 13,
+    "Nome": "Ipon-Ashi-Dachi",
+    "Imagem": "Tachi/Ipon-Ashi-Dachi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 14,
+    "Nome": "Laigoshi-Dachi",
+    "Imagem": "Tachi/Laigoshi-Dachi",
+    "PosturaBR": "Postura Gerais",
+    "PosturaJP": "Tachi",
+    "Tipo": "Postura",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 15,
+    "Nome": "Jodan-Zuki",
+    "Imagem": "Seiken-Waza/Jodan-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 16,
+    "Nome": "Chudan-Zuki",
+    "Imagem": "Seiken-Waza/Chudan-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 17,
+    "Nome": "Gedan-Zuki",
+    "Imagem": "Seiken-Waza/Gedan-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 18,
+    "Nome": "Kaku-Suki",
+    "Imagem": "Seiken-Waza/Kaku-Suki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 19,
+    "Nome": "Tomoe-Zuki",
+    "Imagem": "Seiken-Waza/Tomoe-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 20,
+    "Nome": "Or-Zuki",
+    "Imagem": "Seiken-Waza/Or-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 21,
+    "Nome": "Sayu-Zuki",
+    "Imagem": "Seiken-Waza/Sayu-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 22,
+    "Nome": "Kakushi-Zuki",
+    "Imagem": "Seiken-Waza/Kakushi-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 23,
+    "Nome": "Wari-Uke-Zuki",
+    "Imagem": "Seiken-Waza/Wari-Uke-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 24,
+    "Nome": "Morote-Zuki",
+    "Imagem": "Seiken-Waza/Morote-Zuki",
+    "PosturaBR": "Técnica de Punho",
+    "PosturaJP": "Seiken Waza",
+    "Tipo": "Punho",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 25,
+    "Nome": "Nukite-Zuki",
+    "Imagem": "Yube-Waza/Nukite-Zuki",
+    "PosturaBR": "Técnica de Dedos",
+    "PosturaJP": "Yube Waza",
+    "Tipo": "Dedos",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 26,
+    "Nome": "Morote-Nuki-Zuki",
+    "Imagem": "Yube-Waza/Morote-Nuki-Zuki",
+    "PosturaBR": "Técnica de Dedos",
+    "PosturaJP": "Yube Waza",
+    "Tipo": "Dedos",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 27,
+    "Nome": "Shi-Zuki",
+    "Imagem": "Yube-Waza/Shi-Zuki",
+    "PosturaBR": "Técnica de Dedos",
+    "PosturaJP": "Yube Waza",
+    "Tipo": "Dedos",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 28,
+    "Nome": "Uraken-Uchi",
+    "Imagem": "Uchi-Waza/Uraken-Uchi",
+    "PosturaBR": "Técnica de Ataque",
+    "PosturaJP": "Uchi Waza",
+    "Tipo": "Ataque",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 29,
+    "Nome": "Kentsui-Uchi",
+    "Imagem": "Uchi-Waza/Kentsui-Uchi",
+    "PosturaBR": "Técnica de Ataque",
+    "PosturaJP": "Uchi Waza",
+    "Tipo": "Ataque",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 30,
+    "Nome": "Kyobu-Shuto-Uchi",
+    "Imagem": "Uchi-Waza/Kyobu-Shuto-Uchi",
+    "PosturaBR": "Técnica de Ataque",
+    "PosturaJP": "Uchi Waza",
+    "Tipo": "Ataque",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 31,
+    "Nome": "Kyobu-Morote Shuto-Uchi",
+    "Imagem": "Uchi-Waza/Kyobu-Morote-Shuto-Uchi",
+    "PosturaBR": "Técnica de Ataque",
+    "PosturaJP": "Uchi Waza",
+    "Tipo": "Ataque",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 32,
+    "Nome": "Kyobu-Soete Shuto-Uchi",
+    "Imagem": "Uchi-Waza/Kyobu-Soete-Shuto-Uchi",
+    "PosturaBR": "Técnica de Ataque",
+    "PosturaJP": "Uchi Waza",
+    "Tipo": "Ataque",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 33,
+    "Nome": "Kosa-Haito-Uchi",
+    "Imagem": "Uchi-Waza/Kosa-Haito-Uchi",
+    "PosturaBR": "Técnica de Ataque",
+    "PosturaJP": "Uchi Waza",
+    "Tipo": "Ataque",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 34,
+    "Nome": "Tate-Hiji-Ate",
+    "Imagem": "Ate-Waza/Tate-Hiji-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 35,
+    "Nome": "Yoko-Hiji-Ate",
+    "Imagem": "Ate-Waza/Yoko-Hiji-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 36,
+    "Nome": "Ushiro-Hiji-Ate",
+    "Imagem": "Ate-Waza/Ushiro-Hiji-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 37,
+    "Nome": "Sasae-Hiji-Ate",
+    "Imagem": "Ate-Waza/Sasae-Hiji-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 38,
+    "Nome": "Hiza-Ate",
+    "Imagem": "Ate-Waza/Hiza-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 39,
+    "Nome": "Jodan-Shotei-Ate",
+    "Imagem": "Ate-Waza/Jodan-Shotei-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 40,
+    "Nome": "Chudan-Shotei-Ate",
+    "Imagem": "Ate-Waza/Chudan-Shotei-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 41,
+    "Nome": "Gedan-Shotei-Ate",
+    "Imagem": "Ate-Waza/Gedan-Shotei-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 42,
+    "Nome": "Tomoe-Shotei-Ate",
+    "Imagem": "Ate-Waza/Tomoe-Shotei-Ate",
+    "PosturaBR": "Técnica Esmagadora",
+    "PosturaJP": "Ate Waza",
+    "Tipo": "Esmagadora",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 43,
+    "Nome": "Jodan-Uke",
+    "Imagem": "Seiken-Ude-Uke/Jodan-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 44,
+    "Nome": "Chudan-Soto-Uke",
+    "Imagem": "Seiken-Ude-Uke/Chudan-Soto-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 45,
+    "Nome": "Chudan-Yoko-Uke",
+    "Imagem": "Seiken-Ude-Uke/Chudan-Yoko-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 46,
+    "Nome": "Chudan-Uchi-Uke",
+    "Imagem": "Seiken-Ude-Uke/Chudan-Uchi-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 47,
+    "Nome": "Gedan-Uke",
+    "Imagem": "Seiken-Ude-Uke/Gedan-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 48,
+    "Nome": "Gedan-Yoko-Barai-Uke",
+    "Imagem": "Seiken-Ude-Uke/Gedan-Yoko-Barai-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 49,
+    "Nome": "Sasae-Uke",
+    "Imagem": "Seiken-Ude-Uke/Sasae-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 50,
+    "Nome": "Sayu-Barai-Uke",
+    "Imagem": "Seiken-Ude-Uke/Sayu-Barai-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 51,
+    "Nome": "Joda-Wari-Uke",
+    "Imagem": "Seiken-Ude-Uke/Joda-Wari-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 52,
+    "Nome": "Chudan-Wari-Uke",
+    "Imagem": "Seiken-Ude-Uke/Chudan-Wari-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 53,
+    "Nome": "Jodan-Kosa-Uke",
+    "Imagem": "Seiken-Ude-Uke/Jodan-Kosa-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 54,
+    "Nome": "Gedan-Kosa-Uke",
+    "Imagem": "Seiken-Ude-Uke/Gedan-Kosa-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 55,
+    "Nome": "Morote-Soe-Uke",
+    "Imagem": "Seiken-Ude-Uke/Morote-Soe-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 56,
+    "Nome": "Chudan-Soto-Mawashi-Uke",
+    "Imagem": "Seiken-Ude-Uke/Chudan-Soto-Mawashi-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 57,
+    "Nome": "Morote-Barai-Uke",
+    "Imagem": "Seiken-Ude-Uke/Morote-Barai-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 58,
+    "Nome": "Hazushi-Uke",
+    "Imagem": "Seiken-Ude-Uke/Hazushi-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 59,
+    "Nome": "Otoshi-Uke",
+    "Imagem": "Seiken-Ude-Uke/Otoshi-Uke",
+    "PosturaBR": "Defesa de Antebraço",
+    "PosturaJP": "Seiken-Ude-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 60,
+    "Nome": "Chudan-Soto-Shuto-Uke",
+    "Imagem": "Shuto-Haito-Uke/Chudan-Soto-Shuto-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 61,
+    "Nome": "Jodan-Uchi-Soto-Uke",
+    "Imagem": "Shuto-Haito-Uke/Jodan-Uchi-Soto-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 62,
+    "Nome": "Chudan-Yoko-Shuto-Uke",
+    "Imagem": "Shuto-Haito-Uke/Chudan-Yoko-Shuto-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 63,
+    "Nome": "Gedan-Shuto-Uke",
+    "Imagem": "Shuto-Haito-Uke/Gedan-Shuto-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 64,
+    "Nome": "Gedan-Shuto-Yoko-Barai-Uke",
+    "Imagem": "Shuto-Haito-Uke/Gedan-Shuto-Yoko-Barai-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 65,
+    "Nome": "Chudan-Hasami-Uke",
+    "Imagem": "Shuto-Haito-Uke/Chudan-Hasami-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 66,
+    "Nome": "Makite-Uke",
+    "Imagem": "Shuto-Haito-Uke/Makite-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 67,
+    "Nome": "Magetori-Barai-Uke",
+    "Imagem": "Shuto-Haito-Uke/Magetori-Barai-Uke",
+    "PosturaBR": "Defesa com Faca da Mão",
+    "PosturaJP": "Shuto e Haito-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 68,
+    "Nome": "Torite-Uke",
+    "Imagem": "Shuto-Haito-Shotei-Uke/Torite-Uke",
+    "PosturaBR": "Defesa com Faca e Palma da Mão",
+    "PosturaJP": "Shuto-Haito e Shotei-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 69,
+    "Nome": "Sagurite-Uke",
+    "Imagem": "Shuto-Haito-Shotei-Uke/Sagurite-Uke",
+    "PosturaBR": "Defesa com Faca e Palma da Mão",
+    "PosturaJP": "Shuto-Haito e Shotei-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 70,
+    "Nome": "Gedan-Haito-Yoko-Uke",
+    "Imagem": "Shuto-Haito-Shotei-Uke/Gedan-Haito-Yoko-Uke",
+    "PosturaBR": "Defesa com Faca e Palma da Mão",
+    "PosturaJP": "Shuto-Haito e Shotei-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 71,
+    "Nome": "Chudan-Shotei-Uke",
+    "Imagem": "Shuto-Haito-Shotei-Uke/Chudan-Shotei-Uke",
+    "PosturaBR": "Defesa com Faca e Palma da Mão",
+    "PosturaJP": "Shuto-Haito e Shotei-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 72,
+    "Nome": "Gedan-Shotei-Uke",
+    "Imagem": "Shotei-Uke/Gedan-Shotei-Uke",
+    "PosturaBR": "Defesa com Palma da Mão",
+    "PosturaJP": "Shotei-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 73,
+    "Nome": "Hiji-Uke",
+    "Imagem": "Hijii-Uke/Hiji-Uke",
+    "PosturaBR": "Defesa com Cotovelo",
+    "PosturaJP": "Hijii-Uke",
+    "Tipo": "Defesa",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 74,
+    "Nome": "Kyobo-Geri (Josokutei)",
+    "Imagem": "Keri-Kata/Kyobo-Geri",
+    "PosturaBR": "Técnica de Chutes",
+    "PosturaJP": "Keri-Kata",
+    "Tipo": "Chute",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 75,
+    "Nome": "Fukubu-Geri (Tsumasaki)",
+    "Imagem": "Keri-Kata/Fukubu-Geri",
+    "PosturaBR": "Técnica de Chutes",
+    "PosturaJP": "Keri-Kata",
+    "Tipo": "Chute",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 76,
+    "Nome": "Kinteki-Geri (Sokko)",
+    "Imagem": "Keri-Kata/Kinteki-Geri",
+    "PosturaBR": "Técnica de Chutes",
+    "PosturaJP": "Keri-Kata",
+    "Tipo": "Chute",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 77,
+    "Nome": "Sokuto-Geri (Sokuto)",
+    "Imagem": "Keri-Kata/Sokuto-Geri",
+    "PosturaBR": "Técnica de Chutes",
+    "PosturaJP": "Keri-Kata",
+    "Tipo": "Chute",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 78,
+    "Nome": "Suirakan-No-Kamae",
+    "Imagem": "MovimentosIntermediarios/Suirakan-No-Kamae",
+    "PosturaBR": "Movimentos Intermediários",
+    "PosturaJP": "",
+    "Tipo": "MovimentosIntermediarios",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 79,
+    "Nome": "Ryu-No-Shita-No-Kamae",
+    "Imagem": "MovimentosIntermediarios/Ryu-No-Shita-No-Kamae",
+    "PosturaBR": "Movimentos Intermediários",
+    "PosturaJP": "",
+    "Tipo": "MovimentosIntermediarios",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 80,
+    "Nome": "Sagurite No Kamae",
+    "Imagem": "MovimentosIntermediarios/Sagurite-No-Kamae",
+    "PosturaBR": "Movimentos Intermediários",
+    "PosturaJP": "",
+    "Tipo": "MovimentosIntermediarios",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 81,
+    "Nome": "Hotoke-Gamae",
+    "Imagem": "MovimentosIntermediarios/Hotoke-Gamae",
+    "PosturaBR": "Movimentos Intermediários",
+    "PosturaJP": "",
+    "Tipo": "MovimentosIntermediarios",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 82,
+    "Nome": "Tenshini-Kamae",
+    "Imagem": "MovimentosIntermediarios/Tenshini-Kamae",
+    "PosturaBR": "Movimentos Intermediários",
+    "PosturaJP": "",
+    "Tipo": "MovimentosIntermediarios",
+    "Faixas": [],
+    "Katas": []
+  },
+  {
+    "Id": 83,
+    "Nome": "Ura-Gamae",
+    "Imagem": "MovimentosIntermediarios/Ura-Gamae",
+    "PosturaBR": "Movimentos Intermediários",
+    "PosturaJP": "",
+    "Tipo": "MovimentosIntermediarios",
+    "Faixas": [],
+    "Katas": []
+  }
+]
