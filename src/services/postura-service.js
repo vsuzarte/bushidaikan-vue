@@ -1,11 +1,10 @@
 export default class QuestionService {
   getRandomQuestions(posturas) {
-    //const numQuestions = posturas.length > 10 ? 10 : posturas.length;
+    const numQuestions = posturas.length > 10 ? 10 : posturas.length;
     const allPosturas = posturas;
     const selectedPosturas = [];
-    const questions = [];
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < numQuestions; i++) {
       const remainingPosturas = allPosturas.filter(postura => !selectedPosturas.includes(postura));
 
       const randomIndex = Math.floor(Math.random() * remainingPosturas.length);
