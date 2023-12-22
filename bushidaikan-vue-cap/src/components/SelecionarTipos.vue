@@ -66,5 +66,6 @@ export default {
   display: flex;
   justify-content: flex-end;
   justify-items: center;
+  align-items: center;
 }
 </style>
