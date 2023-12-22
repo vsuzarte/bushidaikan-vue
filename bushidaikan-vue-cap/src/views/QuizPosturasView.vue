@@ -40,12 +40,13 @@
       <v-col cols="6" class="text-center">
         <v-img width="100" :aspect-ratio="1" :src="getLogoPath2()" Default></v-img>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" class="text-center">
         <span v-if="score > 0">Parabéns você teve {{ score }} acertos!!!</span>
         <span v-else>Continue tentando!!!</span>
       </v-col>
       <v-col cols="12">
-        <v-btn class="btn btn-bushi" to="/" block>Voltar para início</v-btn>
+        <v-btn class="btn btn-bushi mb-3" @click.stop="reiniciar()" block>Jogar novamente</v-btn>
+        <v-btn class="btn btn-black" to="/" block>Voltar para início</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -117,14 +118,21 @@ export default {
       this.finalizado = true;
       console.log('fim de jogo', this.score);
     },
+    reiniciar(){
+      this.tiposSelecionados = [];
+      this.posturasSelecionados = [];
+      this.questions = [];
+      this.quizIniciado = false;
+      this.currentQuestionIndex = 0;
+      this.score = 0;
+      this.erros = 0;
+      this.finalizado = false;
+    },
     getLogoPath() {
       return require(`@/assets/images/logo.png`);
     },
     getLogoPath2(){
       return require(`@/assets/images/logo2.png`);
-    },
-    getImageFimPath() {
-      return require(`@/assets/images/final.png`);
     },
   },
   computed: {
@@ -134,4 +142,8 @@ export default {
   }
 }
 </script>
-<style scoped></style>
+<style scoped>
+span{
+  font-weight: 600;
+}
+</style>
