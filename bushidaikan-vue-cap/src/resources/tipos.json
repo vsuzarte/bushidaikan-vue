@@ -1,0 +1,42 @@
+[
+	{
+		"Id": 1,
+		"Nome": "Posturas",
+		"Tipo": "Postura"
+	},
+	{
+		"Id": 2,
+		"Nome": "Técnica de Punho",
+		"Tipo": "Punho"
+	},
+	{
+		"Id": 3,
+		"Nome": "Técnica de Dedos",
+		"Tipo": "Dedos"
+	},
+	{
+		"Id": 4,
+		"Nome": "Técnica de Ataque",
+		"Tipo": "Ataque"
+	},
+	{
+		"Id": 5,
+		"Nome": "Técnica Esmagadora",
+		"Tipo": "Esmagadora"
+	},
+  {
+		"Id": 6,
+		"Nome": "Defesas",
+		"Tipo": "Defesa"
+	},
+  {
+		"Id": 7,
+		"Nome": "Técnica de Chutes",
+		"Tipo": "Chute"
+	},
+  {
+		"Id": 8,
+		"Nome": "Movimentos Intermediários",
+		"Tipo": "MovimentosIntermediarios"
+	}
+]
