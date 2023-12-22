@@ -3,6 +3,7 @@ import { defineStore } from 'pinia';
 export const usePosturasStore = defineStore('posturas', {
   state: () => ({
     posturas: [],
+    selecionados: [],
   }),
 
   actions: {
@@ -21,5 +22,13 @@ export const usePosturasStore = defineStore('posturas', {
     getPosturasPorTipos(tipos) {
       return this.posturas.filter((postura) => tipos.includes(postura.Tipo));
     },
+
+    adicionarSelecionados(selecionados){
+      this.selecionados = selecionados;
+    },
+
+    limparSelecionados(){
+      this.selecionados  = [];
+    }
   },
 });

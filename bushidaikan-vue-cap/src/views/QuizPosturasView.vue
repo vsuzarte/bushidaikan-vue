@@ -1,15 +1,54 @@
 <template>
-  <div>
-    <div v-if="!quizIniciado">
-      <div v-if="tiposStore.tipos">
+  <v-container v-if="!finalizado" class="h-screen bg-padrao">
+    <v-row v-if="!quizIniciado">
+      <v-col v-if="tiposStore.tipos">
         <selecionar-tipos :tipos="tiposStore.tipos" @iniciar-quiz="iniciarQuiz"></selecionar-tipos>
-      </div>
-    </div>
-
-    <div v-else>
-
-    </div>
-  </div>
+      </v-col>
+    </v-row>
+    <v-row v-else>
+      <v-row no-gutters class="mt-2" id="cabecalho">
+        <v-col>
+          <v-btn size="x-medium" class="btn btn-bushi mb-2" to="/" prepend-icon="mdi-arrow-left">Sair</v-btn>
+        </v-col>
+        <v-col>
+          <v-chip color="primary" prepend-icon="mdi-help-box">
+            {{ (this.currentQuestionIndex + 1) }} / {{ this.questions.length }}
+          </v-chip>
+        </v-col>
+        <v-col>
+          <v-chip color="success" prepend-icon="mdi-check-bold">
+            {{ this.score }}
+          </v-chip>
+        </v-col>
+        <v-col>
+          <v-chip color="danger" prepend-icon="mdi-close-thick">
+            {{ this.erros }}
+          </v-chip>
+        </v-col>
+      </v-row>
+      <questao-postura @continuar-quiz="nextQuestion" :currentQuestion="getCurrentQuestion"></questao-postura>
+    </v-row>
+  </v-container>
+  <v-container v-else class="h-screen bg-padrao">
+    <v-row>
+      <v-col class="text-center" cols="12">
+        <p class="with-gradient p-3">Bushudaikan</p>
+      </v-col>
+      <v-col cols="6" class="text-center">
+        <v-img width="100" :aspect-ratio="1" :src="getLogoPath()" Default></v-img>
+      </v-col>
+      <v-col cols="6" class="text-center">
+        <v-img width="100" :aspect-ratio="1" :src="getLogoPath2()" Default></v-img>
+      </v-col>
+      <v-col cols="12">
+        <span v-if="score > 0">Parabéns você teve {{ score }} acertos!!!</span>
+        <span v-else>Continue tentando!!!</span>
+      </v-col>
+      <v-col cols="12">
+        <v-btn class="btn btn-bushi" to="/" block>Voltar para início</v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -17,14 +56,17 @@
 import { onMounted } from 'vue';
 import { useTiposStore } from '@/stores/tiposStore.js';
 import { usePosturasStore } from '@/stores/posturasStore.js';
+import QuestionService from '@/services/postura-service.js';
 import SelecionarTipos from '../components/SelecionarTipos.vue';
+import QuestaoPostura from '../components/QuestaoPostura.vue';
 
 export default {
-  components: { SelecionarTipos },
+  components: { SelecionarTipos, QuestaoPostura },
   name: 'QuizPosturas',
   setup() {
     const tiposStore = useTiposStore()
     const posturasStore = usePosturasStore();
+    const questionService = new QuestionService();
 
     onMounted(() => {
       tiposStore.carregarTipos();
@@ -34,16 +76,19 @@ export default {
     return {
       tiposStore,
       posturasStore,
+      questionService,
     };
   },
   data() {
     return {
-      quizIniciado: false,
       tiposSelecionados: [],
       posturasSelecionados: [],
+      questions: [],
+      quizIniciado: false,
       currentQuestionIndex: 0,
       score: 0,
-      questions: [],
+      erros: 0,
+      finalizado: false,
     };
   },
   methods: {
@@ -51,60 +96,42 @@ export default {
       this.tiposSelecionados = selecionados;
       this.quizIniciado = true;
       this.posturasSelecionados = this.posturasStore.getPosturasPorTipos(selecionados);
-      this.getRandomQuestions();
-      console.log(this.questions);
+      this.questions = this.questionService.getRandomQuestions(this.posturasSelecionados);
     },
-    getRandomQuestions() {
-      
-      const numQuestions = this.posturasSelecionados.length > 10 ? 10 : this.posturasSelecionados.length;
-      const allPosturas = this.posturasSelecionados;
-      const selectedPosturas = [];
-      this.questions = [];
-
-      for (let i = 0; i < numQuestions; i++) {
-        
-        const remainingPosturas = allPosturas.filter(postura => !selectedPosturas.includes(postura));
-
-        const randomIndex = Math.floor(Math.random() * remainingPosturas.length);
-        const currentQuestion = remainingPosturas[randomIndex];
-
-        const otherPosturas = remainingPosturas.filter(postura => postura !== currentQuestion);
-
-        // Pegar a postura correta
-        const correctOption = {
-          nome: currentQuestion.Nome,
-          imagem: currentQuestion.Imagem,
-          posturaBR: currentQuestion.PosturaBR,
-          posturaJP: currentQuestion.PosturaJP,
-          isCorrect: true,
-        };
-
-        // Pegar 3 posturas incorretas aleatórias
-        const incorrects = otherPosturas.sort(() => Math.random() - 0.5).slice(0, 3);
-
-        const incorrectOptions = [];
-
-        incorrects.forEach(incorrectPostura => {
-          const incorrectOption = {
-            nome: currentQuestion.Nome,
-            imagem: currentQuestion.Imagem,
-            posturaBR: currentQuestion.PosturaBR,
-            posturaJP: currentQuestion.PosturaJP,
-            isCorrect: false,
-          };
-          incorrectOptions.push(incorrectOption);
-        });
-
-        // Incluir a postura correta em uma posição aleatória
-        const fullOptions = [correctOption, ...incorrectOptions];
-        const shuffledOptions = fullOptions.sort(() => Math.random() - 0.5);
-
-        selectedPosturas.push(shuffledOptions);
+    nextQuestion(acertou) {
+      if (acertou) {
+        this.score++;
+      } else {
+        this.erros++;
       }
 
-      this.questions = selectedPosturas;
-    }
+      this.currentQuestionIndex++;
+      console.log('this.currentQuestionIndex', this.currentQuestionIndex);
+      console.log('this.questions.length', this.questions.length);
+
+      if (this.currentQuestionIndex >= this.questions.length) {
+        this.finalizarQuiz();
+      }
+    },
+    finalizarQuiz() {
+      this.finalizado = true;
+      console.log('fim de jogo', this.score);
+    },
+    getLogoPath() {
+      return require(`@/assets/images/logo.png`);
+    },
+    getLogoPath2(){
+      return require(`@/assets/images/logo2.png`);
+    },
+    getImageFimPath() {
+      return require(`@/assets/images/final.png`);
+    },
   },
+  computed: {
+    getCurrentQuestion() {
+      return this.questions[this.currentQuestionIndex];
+    }
+  }
 }
 </script>
 <style scoped></style>

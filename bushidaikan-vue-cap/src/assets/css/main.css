@@ -7,7 +7,7 @@
   font-weight: bolder;
   border: none;
   padding: 5px 15px;
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -22,4 +22,38 @@
   color: white;
   background-color: black;
   box-shadow: 0 5px #FBC920;
+}
+
+.btn-green{
+  color: white;
+  background-color: #32CD32;
+  box-shadow: 0 5px #006400;
+}
+
+.btn-blue {
+  background-color: blue;
+  box-shadow: 0 5px rgb(127, 127, 236);
+  color: white;
+}
+
+.btn-red {
+  background-color: red;
+  box-shadow: 0 5px gray;
+  color: white;
+}
+
+.with-gradient {
+  position: relative;
+  padding: 1px;
+  font-weight: 600;
+}
+
+.with-gradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px; /* Ajuste a altura da borda conforme necessário */
+  background: linear-gradient(to right, #FBC920, #f7bd00); /* Cores da sua borda gradiente */
 }
