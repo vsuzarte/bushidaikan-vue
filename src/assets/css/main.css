@@ -7,27 +7,40 @@
   font-weight: bolder;
   border: none;
   padding: 5px 15px;
-  font-size: 13px;
+  font-size: 15px;
   border-radius: 5px;
+  font-weight: bolder;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn-bushi{
   background-color: #FBC920;
-  box-shadow: 0 5px black;
+  box-shadow: 0 2px white;
 }
 
 .btn-black{
   color: white;
   background-color: black;
-  box-shadow: 0 5px #FBC920;
+  box-shadow: 0 2px #FBC920;
+}
+
+.btn-white{
+  color: black;
+  background-color: white;
+  box-shadow: 0 2px #FBC920;
+}
+
+.btn-black{
+  color: white;
+  background-color: black;
+  box-shadow: 0 2px #FBC920;
 }
 
 .btn-green{
   color: white;
   background-color: #32CD32;
-  box-shadow: 0 5px #006400;
+  box-shadow: 0 2px #006400;
 }
 
 .btn-blue {
@@ -38,7 +51,7 @@
 
 .btn-red {
   background-color: red;
-  box-shadow: 0 5px gray;
+  box-shadow: 0 2px gray;
   color: white;
 }
 
@@ -54,6 +67,43 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 5px; /* Ajuste a altura da borda conforme necessário */
-  background: linear-gradient(to right, #FBC920, #f7bd00); /* Cores da sua borda gradiente */
+  height: 5px; 
+  background: linear-gradient(to right, #FBC920, #f7bd00);
+}
+
+.col-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 30px; 
+  color: #FBC920; 
+  padding: 8px; 
+  text-align: center; 
+  border-radius: 8px; 
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif; 
+  font-size: 20px; 
+  padding: 6px; 
+  text-align: center; 
+  border-radius: 6px;
+}
+
+h3 {
+  font-family: 'Arial', sans-serif; 
+  font-size: 15px; 
+  padding: 4px; 
+  text-align: center; 
+  border-radius: 4px;
+}
+
+.bg-bushi{
+  background-color: #FBC920;
+  color: black;
 }

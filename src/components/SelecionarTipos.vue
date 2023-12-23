@@ -1,28 +1,40 @@
 <template>
   <v-container>
-    <v-row id="cabecalho" no-gutters>
-      <v-col cols="6">
-        <v-btn size="x-medium" class="btn btn-bushi mb-2" to="/" prepend-icon="mdi-arrow-left">Voltar</v-btn>
+    <v-row no-gutters>
+      <v-col cols="12" class="col-center">
+        <v-btn size="x-medium" class="btn btn-bushi mb-4" to="/" prepend-icon="mdi-arrow-left">Tela Inicial</v-btn>
       </v-col>
-      <v-col id="logo" cols="6">
-        <v-avatar class="mb-2">
-          <v-img :src="getImagePath()" alt="logo"></v-img>
-        </v-avatar>
-      </v-col>
-      <v-col class="mb-2" cols="12">
+      <v-col cols="12">
         <hr>
       </v-col>
-      <v-col cols="12">
-        <h4>Selecione o deseja praticar.</h4>
+      <v-col cols="12" class="col-center">
+        <h1>Selecione abaixo o deseja praticar.</h1>
       </v-col>
     </v-row>
     <v-row no-gutters>
-      <v-col cols="12" v-for="tipo in tipos" :key="tipo.Id">
-        <v-checkbox v-model="selecionados" :label="tipo.Nome" hide-details :value="tipo.Tipo"></v-checkbox>
+      <v-col cols="6" v-for="tipo in tipos" :key="tipo.Id">
+        <v-checkbox color="orange" v-model="selecionados" :label="tipo.Nome" hide-details :value="tipo.Tipo"></v-checkbox>
+      </v-col>
+      <v-col cols="12">
+        <hr>
       </v-col>
     </v-row>
     <v-row no-gutters>
-      <v-col cols="12">
+      <v-col cols="12" class="col-center">
+        <h1>Selecione quantas perguntas deseja responder.</h1>
+      </v-col>
+      <v-col cols="4" class="col-center">
+        <v-btn @click="selecionarQuantidade(5)" class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade === 5 }">5</v-btn>
+      </v-col>
+      <v-col cols="4" class="col-center">
+        <v-btn @click="selecionarQuantidade(10)"  class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade === 10 }">10</v-btn>
+      </v-col>
+      <v-col cols="4" class="col-center">
+        <v-btn @click="selecionarQuantidade(20)" class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade > 10 }">Todas</v-btn>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12" class="col-center">
         <v-btn @click.stop="iniciarQuiz()" class="btn btn-bushi" block>Iniciar Quiz</v-btn>
       </v-col>
     </v-row>
@@ -42,30 +54,20 @@ export default {
   data() {
     return {
       selecionados: [],
+      quantidade: 5,
     }
   },
   methods: {
     iniciarQuiz() {
-      this.$emit('iniciar-quiz', this.selecionados);
+      if(this.selecionados.length > 0){
+        this.$emit('iniciar-quiz', this.selecionados, this.quantidade);
+      }else{
+        console.log('Selecione ao menos 1 conteudo para estudo.')
+      }
     },
-    getImagePath() {
-      return require(`@/assets/images/logo.png`);
-    },
+    selecionarQuantidade(quantidade){
+      this.quantidade = quantidade;
+    }
   }
 }
 </script>
-<style scoped>
-#cabecalho {
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-}
-
-#logo {
-  display: flex;
-  justify-content: flex-end;
-  justify-items: center;
-  align-items: center;
-}
-</style>

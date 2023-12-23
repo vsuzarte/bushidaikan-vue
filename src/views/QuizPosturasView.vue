@@ -1,7 +1,7 @@
 <template>
-  <v-container v-if="!finalizado" class="h-screen bg-padrao">
+  <v-container v-if="!finalizado" class="h-screen">
     <v-row v-if="!quizIniciado">
-      <v-col v-if="tiposStore.tipos">
+      <v-col cols="12" v-if="tiposStore.tipos">
         <selecionar-tipos :tipos="tiposStore.tipos" @iniciar-quiz="iniciarQuiz"></selecionar-tipos>
       </v-col>
     </v-row>
@@ -29,7 +29,7 @@
       <questao-postura @continuar-quiz="nextQuestion" :currentQuestion="getCurrentQuestion"></questao-postura>
     </v-row>
   </v-container>
-  <v-container v-else class="h-screen bg-padrao">
+  <v-container v-else class="h-screen">
     <v-row>
       <v-col class="text-center" cols="12">
         <p class="with-gradient p-3">Bushudaikan</p>

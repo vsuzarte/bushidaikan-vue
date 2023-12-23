@@ -7,7 +7,7 @@
       <v-img width="100" :aspect-ratio="1" :src="getLogoPath2()" Default></v-img>
     </v-col>
     <v-col cols="12">
-      <span>Ainda estamos trabalhando nisso. Em breve teremos esse página pronta.</span>
+      <span>Ainda estamos trabalhando nisso. Em breve teremos essa página pronta.</span>
       <v-img width="100" :aspect-ratio="1" :src="getImagePath()" cover></v-img>
     </v-col>
     <v-col cols="12">
@@ -20,7 +20,7 @@
 <script>
 
 export default {
-  name: 'QuizPalavras',
+  name: 'ListaTecnicas',
   components: {
   },
   methods: {

@@ -1,16 +1,28 @@
 <template>
-  <v-container class="h-screen bg-padrao">
+  <v-container class="h-screen">
     <v-row no-gutters>
-      <v-col cols="12">
-        <v-img width="300" :aspect-ratio="1" :src="getImagePath()"
-          cover></v-img>
+      <v-col cols="12" class="col-center text-center">
+        <h2>OKINAWA SHORIN-RYU</h2>
+        <h2>KARATÊ-DO BUSHIDAIKAN</h2>
       </v-col>
-      <v-col class="text-center" cols="12">
-        <h2 class="mb-5">Karate-Do Bushidaikan</h2>
+      <v-col cols="12" class="col-center">
+        <v-img width="300" :aspect-ratio="1" :src="getImagePath()" cover></v-img>
+      </v-col>
+      <v-spacer></v-spacer>
+      <v-col cols="12" class="col-center">
+        <h2 class="mb-1">Karate-Do de</h2>
+        <h1 class="mb-1">OKINAWA</h1>
+        <h2 class="mb-5">Manual Auxiliar de Treino</h2>
       </v-col>
     </v-row>
     <v-row no-gutters>
-        <menu-principal/>
+      <menu-principal />
+    </v-row>
+    <v-row no-gutters>
+      <v-col cols="12" class="col-center bg-bushi">
+        <h3>Renshi</h3>
+        <h3>Maycon H. Sichelschimidt</h3>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -31,5 +43,4 @@ export default {
 }
 </script>
 <style scoped>
-  
 </style>

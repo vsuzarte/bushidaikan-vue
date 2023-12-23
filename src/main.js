@@ -7,6 +7,7 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import router from './router'
 import '@/assets/css/main.css';
+import '@/assets/fonts/style.css';
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
 
 const vuetify = createVuetify({
