@@ -4,5 +4,8 @@
   "webDir": "dist",
   "server": {
     "androidScheme": "https"
+  },
+  "android": {
+    "iconPath": "/src/assets/images/appIcon.png" 
   }
 }
