@@ -26,7 +26,7 @@
     </v-row>
     <v-row no-gutters>
       <v-col cols="12" class="col-center">
-        <p>Beta-1.0.0</p>
+        <p>Beta-0.1.0</p>
       </v-col>
     </v-row>
   </v-container>
