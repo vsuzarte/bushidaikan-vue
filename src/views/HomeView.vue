@@ -6,7 +6,7 @@
         <h2>KARATÊ-DO BUSHIDAIKAN</h2>
       </v-col>
       <v-col cols="12" class="col-center">
-        <v-img width="300" :aspect-ratio="1" :src="getImagePath()" cover></v-img>
+        <v-img width="150" :aspect-ratio="1" :src="getImagePath()" cover></v-img>
       </v-col>
       <v-spacer></v-spacer>
       <v-col cols="12" class="col-center">
@@ -22,6 +22,11 @@
       <v-col cols="12" class="col-center bg-bushi">
         <h3>Renshi</h3>
         <h3>Maycon H. Sichelschimidt</h3>
+      </v-col>
+    </v-row>
+    <v-row no-gutters>
+      <v-col cols="12" class="col-center">
+        <p>Beta-1.0.0</p>
       </v-col>
     </v-row>
   </v-container>

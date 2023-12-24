@@ -1,18 +1,15 @@
 <template>
-  <v-container>
+  <div>
     <v-row no-gutters>
-      <v-col cols="12" class="col-center">
-        <v-btn size="x-medium" class="btn btn-bushi mb-4" to="/" prepend-icon="mdi-arrow-left">Tela Inicial</v-btn>
-      </v-col>
-      <v-col cols="12">
-        <hr>
+      <v-col cols="12" align="left">
+        <v-btn size="small" class="btn btn-bushi mb-4" to="/" prepend-icon="mdi-arrow-left">SAIR</v-btn>
       </v-col>
       <v-col cols="12" class="col-center">
-        <h1>Selecione abaixo o deseja praticar.</h1>
+        <h3>O que deseja praticar ?</h3>
       </v-col>
     </v-row>
-    <v-row no-gutters>
-      <v-col cols="6" v-for="tipo in tipos" :key="tipo.Id">
+    <v-row no-gutters >
+      <v-col class="col-checkbox" cols="12" v-for="tipo in tipos" :key="tipo.Id">
         <v-checkbox color="orange" v-model="selecionados" :label="tipo.Nome" hide-details :value="tipo.Tipo"></v-checkbox>
       </v-col>
       <v-col cols="12">
@@ -20,25 +17,25 @@
       </v-col>
     </v-row>
     <v-row no-gutters>
-      <v-col cols="12" class="col-center">
-        <h1>Selecione quantas perguntas deseja responder.</h1>
+      <v-col cols="12" class="col-center mb-3">
+        <h3>A quantidade de perguntas ?</h3>
       </v-col>
       <v-col cols="4" class="col-center">
-        <v-btn @click="selecionarQuantidade(5)" class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade === 5 }">5</v-btn>
+        <v-btn size="small" @click="selecionarQuantidade(5)" class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade === 5 }">5</v-btn>
       </v-col>
       <v-col cols="4" class="col-center">
-        <v-btn @click="selecionarQuantidade(10)"  class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade === 10 }">10</v-btn>
+        <v-btn size="small" @click="selecionarQuantidade(10)"  class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade === 10 }">10</v-btn>
       </v-col>
       <v-col cols="4" class="col-center">
-        <v-btn @click="selecionarQuantidade(20)" class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade > 10 }">Todas</v-btn>
+        <v-btn size="small" @click="selecionarQuantidade(20)" class="btn btn-bushi mb-2" :class="{ 'btn-green': quantidade > 10 }">Todas</v-btn>
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12" class="col-center">
-        <v-btn @click.stop="iniciarQuiz()" class="btn btn-bushi" block>Iniciar Quiz</v-btn>
+        <v-btn size="small" @click.stop="iniciarQuiz()" class="btn btn-bushi" block>Iniciar Quiz</v-btn>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -61,8 +58,6 @@ export default {
     iniciarQuiz() {
       if(this.selecionados.length > 0){
         this.$emit('iniciar-quiz', this.selecionados, this.quantidade);
-      }else{
-        console.log('Selecione ao menos 1 conteudo para estudo.')
       }
     },
     selecionarQuantidade(quantidade){
@@ -71,3 +66,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.col-checkbox{
+  color: black;
+  height: 50px;
+}
+
+.v-checkbox .v-selection-control {
+    min-height: 10px !important;
+}
+</style>

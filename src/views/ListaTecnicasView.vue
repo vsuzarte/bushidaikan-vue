@@ -11,8 +11,8 @@
       <v-img width="100" :aspect-ratio="1" :src="getImagePath()" cover></v-img>
     </v-col>
     <v-col cols="12">
-        <v-btn class="btn btn-bushi mb-3" to="/quiz-posturas" block>Treinar Técnicas</v-btn>
-        <v-btn class="btn btn-black" to="/" block>Voltar para início</v-btn>
+        <v-btn size="small" class="btn btn-bushi mb-3" to="/quiz-posturas" block>Treinar Técnicas</v-btn>
+        <v-btn size="small" class="btn btn-black" to="/" block>Voltar para início</v-btn>
       </v-col>
   </v-container>
 </template>

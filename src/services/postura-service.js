@@ -1,6 +1,11 @@
 export default class QuestionService {
-  getRandomQuestions(posturas) {
-    const numQuestions = posturas.length > 10 ? 10 : posturas.length;
+  getRandomQuestions(posturas, quantidade) {
+    
+    if(quantidade > 10){
+      quantidade = posturas.length;
+    }
+
+    const numQuestions = quantidade >= posturas.length  ? posturas.length : quantidade;
     const allPosturas = posturas;
     const selectedPosturas = [];
 
