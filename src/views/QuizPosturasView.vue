@@ -149,7 +149,7 @@ export default {
       return require(`@/assets/images/logo.png`);
     },
     getLogoPath2() {
-      return require(`@/assets/images/logo2.png`);
+      return require(`@/assets/images/logo3.png`);
     },
   },
   computed: {
