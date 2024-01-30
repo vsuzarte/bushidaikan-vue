@@ -1,11 +1,11 @@
 <template>
   <div class="row q-col-gutter-none">
-    <div class="col-12 text-center text-bold sub-title q-mb-md">{{ correctOption.palavra }}</div>
+    <div class="col-12 text-center text-bold sub-title q-mb-md">{{ currentQuestion.Pergunta }}</div>
     <div v-if="!btnIsConfirm" class="col-12">
       <q-btn v-for="(option, index) in shuffledOptions" :key="index" :disabled="btnIsConfirm" class="full-width q-mb-xs"
         :color="index === selectedButtonIndex ? 'secondary' : 'amber'" text-color="black"
         @click.stop="selectAwnser(option, index)">
-        {{ option.traducao }}
+        {{ option.Resposta }}
       </q-btn>
       <q-btn class="full-width" color="primary" @click.stop="checkAwnser()" :disabled="selectedQuestion === null"
         block>Confirmar</q-btn>
@@ -19,7 +19,7 @@
         <p>Sua resposta foi:</p>
         <div class="col-12 bg-green text-center" style="display: flex; align-items: center; justify-content: center;">
           <q-icon color="white" size="2.1em" name="check_circle" />
-          <span class="resposta text-bolder">{{ correctOption.traducao }}</span>
+          <span class="resposta text-bolder">{{ correctOption.Resposta }}</span>
         </div>
       </div>
       <div v-else class="col-12 text-center">
@@ -30,12 +30,12 @@
         <p>Sua resposta foi:</p>
         <div class="col-12 bg-red text-center" style="display: flex; align-items: center; justify-content: center;">
           <q-icon color="white" size="2.1em" name="cancel" />
-          <span class="resposta text-bolder">{{ selectedQuestion.traducao }}</span>
+          <span class="resposta text-bolder">{{ selectedQuestion.Resposta }}</span>
         </div>
         <p>A resposta correta é: </p>
         <div class="col-12 bg-green text-center" style="display: flex; align-items: center; justify-content: center;">
           <q-icon color="white" size="2.1em" name="check_circle" />
-          <span class="resposta text-bolder">{{ correctOption.traducao }}</span>
+          <span class="resposta text-bolder">{{ correctOption.Resposta }}</span>
         </div>
       </div>
       <div class="col-12 q-mt-md">
@@ -64,8 +64,8 @@ export default {
   },
   methods: {
     getCorrectOption() {
-      const palavraCorreta = this.currentQuestion.find(palavra => palavra.isCorrect === true);
-      return palavraCorreta;
+      const respostaCorreta = this.currentQuestion.Alternativas.find(resposta => resposta.IsCorrect === true);
+      return respostaCorreta;
     },
     selectAwnser(option, index) {
       this.selectedQuestion = option;
@@ -73,7 +73,7 @@ export default {
     },
     checkAwnser() {
       this.btnIsConfirm = true;
-      this.acertou = this.selectedQuestion.isCorrect;
+      this.acertou = this.selectedQuestion.IsCorrect;
       this.playSound(this.acertou);
     },
     nextQuestion() {
@@ -98,7 +98,7 @@ export default {
       return this.getCorrectOption();
     },
     shuffledOptions() {
-      const question = this.currentQuestion;
+      const question = this.currentQuestion.Alternativas;
       return question.sort(() => Math.random() - 0.5);
     }
   }

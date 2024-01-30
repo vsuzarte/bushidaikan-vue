@@ -25,6 +25,11 @@ const routes = [
     path: '/lista-palavras',
     name: 'lista-palavras',
     component: () => import(/* webpackChunkName: "about" */ '../views/ListaPalavrasView.vue')
+  },
+  {
+    path: '/quiz-gerais',
+    name: 'quiz-gerais',
+    component: () => import(/* webpackChunkName: "about" */ '../views/QuizGeraisView.vue')
   }
 ]
 

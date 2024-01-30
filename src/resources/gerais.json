@@ -1,0 +1,332 @@
+[
+	{
+		"Id": 1,
+		"Pergunta": "Quantos Kyu possuem na escola Bushidaikan-Ryu?",
+		"Alternativas": [
+      {
+        "Resposta": "4 Kyu",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "5 Kyu",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "6 Kyu",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "7 Kyu",
+        "IsCorrect": true
+      }
+    ]
+	},
+  {
+		"Id": 2,
+		"Pergunta": "Como é chamado a sede de uma escola de Karatê?",
+		"Alternativas": [
+      {
+        "Resposta": "Shibu Dojo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Hombu Dojo",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Jun Shibu Dojo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Fuku Shibu Dojo",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 3,
+		"Pergunta": "A Escola Bushidaikan-Ryu foi fundada no Brasil em que ano?",
+		"Alternativas": [
+      {
+        "Resposta": "1989",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "1999",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "2009",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "2019",
+        "IsCorrect": true
+      }
+    ]
+	},
+  {
+		"Id": 4,
+		"Pergunta": "A partir de qual idade pode-se graduar uma faixa preta 1º Dan na escola Bushidaikan-Ryu?",
+		"Alternativas": [
+      {
+        "Resposta": "14 anos",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "15 anos",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "16 anos",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "17 anos",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 5,
+		"Pergunta": "Na escola Bushidaikan-Ryu são praticados ao todo quantos Kata?",
+		"Alternativas": [
+      {
+        "Resposta": "20 kata",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "21 kata",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "22 kata",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "23 kata",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 6,
+		"Pergunta": "Keri Kata é um conjunto de quais técnicas na escola Bushidaikan-Ryu?",
+		"Alternativas": [
+      {
+        "Resposta": "Ataques de braços",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Ataques de Pernas",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Defesas altas",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Bases",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 7,
+		"Pergunta": "Como é chamado um Dojo em processo de conversão para a escola Bushidaikan-Ryu?",
+		"Alternativas": [
+      {
+        "Resposta": "Shibu Dojo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Hombu Dojo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Jun Shibu Dojo",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Fuku Shibu Dojo",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 8,
+		"Pergunta": "Qual o nome do Mestre de Okinawa que a escola Bushidaikan-Ryu está ligada através da SRKDI?",
+		"Alternativas": [
+      {
+        "Resposta": "Tanaka Massaki",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Shoguro Nagazaki",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Takeshi Tamaki",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Maeshiro Morinobu",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 9,
+		"Pergunta": "O que é o Dojokun?",
+		"Alternativas": [
+      {
+        "Resposta": "Código de honra de um Dojo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Código de conduta de um Dojo",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Código samurai de um Dojo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Código de técnicas de um Dojo",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 10,
+		"Pergunta": "Quando o sensei anuncia SHUGO durante um treino, ele está pedindo para:",
+		"Alternativas": [
+      {
+        "Resposta": "Levantar-se",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Sentar-se",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Alinhar-se",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Aquecer-se",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 11,
+		"Pergunta": "O que é Karategi?",
+		"Alternativas": [
+      {
+        "Resposta": "Pessoa que pratica Karatê",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Professor mais experiente do Dojo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Vestimenta do Karatê",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Faixas abaixo de preta",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 12,
+		"Pergunta": "Quantos são os Yakusoku Kumite praticados na escola Bushidaikan-Ryu?",
+		"Alternativas": [
+      {
+        "Resposta": "4 Yakusoku Kumite",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "5 Yakusoku Kumite",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "6 Yakusoku Kumite",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "7 Yakusoku Kumite",
+        "IsCorrect": true
+      }
+    ]
+	},
+  {
+		"Id": 13,
+		"Pergunta": "O Hombu Dojo da escola Bushidaikan-Ryu fica localizado no estado:",
+		"Alternativas": [
+      {
+        "Resposta": "de São Paulo",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "da Bahia",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "do Rio de Janeiro",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "do Paraná",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 14,
+		"Pergunta": "Qual é o estilo de Karatê da escola Bushidaikan-Ryu?",
+		"Alternativas": [
+      {
+        "Resposta": "Shorin-Ryu",
+        "IsCorrect": true
+      },
+      {
+        "Resposta": "Shotokan",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Goju-Ryu",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Wado-Ryu",
+        "IsCorrect": false
+      }
+    ]
+	},
+  {
+		"Id": 15,
+		"Pergunta": "Qual o Kata da escola Bushidaikan-Ryu, que o praticante leva cerca de 10 anos para dominá-lo?",
+		"Alternativas": [
+      {
+        "Resposta": "Seisan",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Chinto",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Gojushiho",
+        "IsCorrect": false
+      },
+      {
+        "Resposta": "Kusanku",
+        "IsCorrect": true
+      }
+    ]
+	}
+]

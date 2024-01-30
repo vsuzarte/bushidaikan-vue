@@ -36,7 +36,7 @@
         <q-btn color="black" class="full-width" to="/lista-palavras" block>Lista de Vacabulários</q-btn>
       </div>
       <div class="col-12 q-mb-sm">
-        <q-btn color="amber" text-color="black" class="full-width" to="/" block>Treinar Conhecimentos gerais</q-btn>
+        <q-btn color="amber" text-color="black" class="full-width" to="/quiz-gerais" block>Treinar Conhecimentos gerais</q-btn>
       </div>
       <div class="col-12 text-center items-center footer-home">
         <p class="text-bold q-mt-sm">Renshi</p>

@@ -21,3 +21,9 @@
   .q-btn span {
     font-weight: bolder;
   }
+
+  .resposta{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding: 0.5rem
+  }
