@@ -26,12 +26,17 @@
         </q-chip>
       </div>
       <div class="col-12 div-border">
-        <q-chip color="white" size="md">
-          <q-avatar><img :src="getBrasilPath"></q-avatar>
-          {{ palavra.Traducao }}
-        </q-chip>
+        <p><q-avatar size="md"><img :src="getBrasilPath"></q-avatar> {{ palavra.Traducao }}</p>
       </div>
     </div>
+    <q-footer elevated>
+      <q-toolbar class="bg-dark">
+        <q-toolbar-title>
+        <q-btn round color="amber" to="/" text-color="black" icon="home" />
+      </q-toolbar-title>
+      <q-btn class="q-ml-sm" round color="green" text-color="black" icon="arrow_upward" @click="scrollToTop" />
+      </q-toolbar>
+    </q-footer>
   </div>
 </template>
 
@@ -69,6 +74,12 @@ export default {
     getImagePath() {
       return require(`@/assets/images/logo.png`);
     },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Rola suavemente para o topo
+      });
+    }
   },
   computed: {
     getBrasilPath() {

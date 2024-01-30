@@ -48,14 +48,6 @@
         <q-toolbar-title>
         <q-btn round color="amber" to="/" text-color="black" icon="home" />
       </q-toolbar-title>
-      <q-input color="yellow" dark filled v-model="nomePustura" label="Buscar">
-        <template v-slot:prepend>
-          <q-icon name="search" />
-        </template>
-        <template v-slot:append>
-          <q-icon name="close" @click="nomePustura = ''" class="cursor-pointer" />
-        </template>
-      </q-input>
       <q-btn class="q-ml-sm" round color="green" text-color="black" icon="arrow_upward" @click="scrollToTop" />
       </q-toolbar>
     </q-footer>
