@@ -14,8 +14,15 @@ export const useTiposStore = defineStore('tipos', {
         console.error('Erro ao carregar tipos:', error);
       }
     },
-    atualizarSelecionados(selecionados) {
-      this.selecionados = selecionados;
+
+    getPorTipos(tipos) {
+      if(tipos.length <= 0){
+        return this.tipos;
+      }
+      return this.tipos.filter((tipo) => tipos.includes(tipo.Tipo));
     },
+
+    
+
   },
 });

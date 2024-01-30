@@ -1,44 +1,51 @@
 <template>
-  <div>
-    <v-row no-gutters>
-      <v-col class="text-center" cols="12">
-        <h2> {{ correctOption.posturaBR }} </h2>
-      </v-col>
-      <v-col cols="12" class="mb-3 col-center">
-        <v-img class="img-postura" width="300" :aspect-ratio="1" :src="getImagePath()" Default></v-img>
-      </v-col>
-    </v-row>
-    <v-row no-gutters v-if="!btnIsConfirm">
-      <v-col cols="12">
-        <v-btn size="small" v-for="(option, index) in shuffledOptions" :key="index" :disabled="btnIsConfirm"
-          @click.stop="selectAwnser(option, index)" class="btn btn-bushi mb-3"
-          :class="{ 'btn-green': index === selectedButtonIndex }" block>
+  <div class="row q-col-gutter-none">
+      <div class="col-12 text-center text-bold sub-title q-mb-md">{{ correctOption.posturaBR }}</div>
+      <div class="col-12 text-center">
+        <img width="100%" :src="getImagePath()" style="border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #FBC920;">
+      </div>
+      <div v-if="!btnIsConfirm" class="col-12">
+        <q-btn  v-for="(option, index) in shuffledOptions" :key="index" :disabled="btnIsConfirm"
+          class="full-width q-mb-xs" :color="index === selectedButtonIndex ? 'secondary' : 'amber'"
+          text-color="black"
+          @click.stop="selectAwnser(option, index)">
           {{ option.nome }}
-        </v-btn>
-        <v-btn size="small" class="btn btn-blue" @click.stop="checkAwnser()" :disabled="selectedQuestion === null"
-          block>Confirmar</v-btn>
-      </v-col>
-    </v-row>
-    <v-row no-gutters v-else>
-      <v-col v-if="acertou" cols="12">
-        <v-col cols="12" class="resposta">
-
-          <h3>Você acertou! Parabéns. </h3>
-          <h3>Sua resposta foi: </h3>
-          <v-btn size="small" class="btn btn-green" block>{{ correctOption.nome }}</v-btn>
-        </v-col>
-      </v-col>
-      <v-col v-else cols="12" class="resposta">
-        <h3>Você errou mas continue tentando!!!</h3>
-        <h3>Sua resposta foi: </h3>
-        <v-btn size="small" class="btn btn-red" block>{{ selectedQuestion.nome }}</v-btn>
-        <h3>A resposta correta é: </h3>
-        <v-btn size="small" class="btn btn-green mb-3" block>{{ correctOption.nome }}</v-btn>
-      </v-col>
-      <v-col>
-        <v-btn size="small" class="btn btn-bushi" @click.stop="nextQuestion()" block>Continuar</v-btn>
-      </v-col>
-    </v-row>
+        </q-btn>
+        <q-btn class="full-width" color="primary" @click.stop="checkAwnser()" :disabled="selectedQuestion === null"
+          block>Confirmar</q-btn>
+      </div>
+      <div v-else class="col-12">
+        <div v-if="acertou" class="col-12 text-center">
+          <q-chip color="white" size="xl">
+                <q-icon color="amber"  name="emoji_events" />
+                Parabéns, você acertou!
+          </q-chip>
+          <p>Sua resposta foi:</p>
+          <q-chip color="green" size="lg">
+                <q-icon color="white" size="1em"  name="check_circle" />
+                {{ correctOption.nome }}
+          </q-chip>
+        </div>
+        <div v-else class="col-12 text-center">
+          <q-chip color="white" size="xl">
+                <q-icon color="red"  name="heart_broken" />
+                Continue tentando!
+          </q-chip>
+          <p>Sua resposta foi:</p>
+          <q-chip color="red" size="lg">
+                <q-icon color="white" size="1em"  name="cancel" />
+                {{ selectedQuestion.nome }}
+          </q-chip>
+          <p>A resposta correta é: </p>
+          <q-chip color="green" size="lg">
+                <q-icon color="white" size="1em"  name="check_circle" />
+                {{ correctOption.nome }}
+          </q-chip>
+        </div>
+        <div class="col-12 q-mt-md">
+          <q-btn text-color="black" class="full-width q-mb-xs" color="amber" @click.stop="nextQuestion()">Continuar</q-btn>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -110,16 +117,4 @@ export default {
 </script>
 
 <style scoped>
-.resposta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-postura {
-  border: 2px solid transparent;
-  border-image: linear-gradient(45deg, #FBC920, black);
-  border-image-slice: 1;
-  background-color: #FBC920;
-}
 </style>

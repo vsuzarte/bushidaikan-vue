@@ -1,44 +1,56 @@
 <template>
-  <v-container class="h-screen">
-    <v-row no-gutters>
-      <v-col cols="12" class="col-center text-center">
-        <h2>OKINAWA SHORIN-RYU</h2>
-        <h2>KARATÊ-DO BUSHIDAIKAN</h2>
-      </v-col>
-      <v-col cols="12" class="col-center">
-        <v-img width="150" :aspect-ratio="1" :src="getImagePath()" cover></v-img>
-      </v-col>
-      <v-spacer></v-spacer>
-      <v-col cols="12" class="col-center">
-        <h2 class="mb-1">Karate-Do de</h2>
-        <h1 class="mb-1">OKINAWA</h1>
-        <h2 class="mb-5">Manual Auxiliar de Treino</h2>
-      </v-col>
-    </v-row>
-    <v-row no-gutters>
-      <menu-principal />
-    </v-row>
-    <v-row no-gutters>
-      <v-col cols="12" class="col-center bg-bushi">
-        <h3>Renshi</h3>
-        <h3>Maycon H. Sichelschimidt</h3>
-      </v-col>
-    </v-row>
-    <v-row no-gutters>
-      <v-col cols="12" class="col-center">
-        <p>Beta-0.1.0</p>
-      </v-col>
-    </v-row>
-  </v-container>
+  <div class="q-pa-md ">
+    <div class="row q-col-gutter-none justify-center">
+      <div class="col-12 text-center">
+        <span class="text-bold title">OKINAWA SHORIN-RYU</span>
+      </div>
+      <div class="col-12 text-center text-bold">
+        <span class="text-bold title">KARATÊ-DO BUSHIDAIKAN</span>
+      </div>
+      <div class="col-12 text-center">
+        <q-img
+          :src="getImagePath()"
+          :ratio="1"
+          width="60%"
+        />
+      </div>
+      <div class="col-12 text-center">
+        <span class="sub-title text-bold ">Karate-Do de</span>
+      </div>
+      <div class="col-12 text-center">
+        <span class="sub-title text-bold ">OKINAWA SHORIN-RYU</span>
+      </div>
+      <div class="col-12 text-center text-bold">
+        <p class="text-bold">Manual Auxiliar de Treino</p>
+      </div>
+      <div class="col-12 q-mb-sm">
+        <q-btn color="amber" text-color="black" class="full-width" to="/quiz-posturas" block>Treinar Técnicas</q-btn>
+      </div>
+      <div class="col-12 q-mb-sm">
+        <q-btn color="black" class="full-width" to="/lista-tecnicas" block>Lista de Técnicas</q-btn>
+      </div>
+      <div class="col-12 q-mb-sm">
+        <q-btn color="amber" text-color="black" class="full-width" to="/quiz-palavras" block>Treinar Vocabulário</q-btn>
+      </div>
+      <div class="col-12 q-mb-sm">
+        <q-btn color="black" class="full-width" to="/lista-palavras" block>Lista de Vacabulários</q-btn>
+      </div>
+      <div class="col-12 q-mb-sm">
+        <q-btn color="amber" text-color="black" class="full-width" to="/" block>Treinar Conhecimentos gerais</q-btn>
+      </div>
+      <div class="col-12 text-center items-center footer-home">
+        <p class="text-bold q-mt-sm">Renshi</p>
+        <p class="text-bold">Maycon H. Sichelschimidt</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import MenuPrincipal from '../components/MenuPrincipal.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    MenuPrincipal
   },
   methods: {
     getImagePath() {

@@ -20,6 +20,11 @@ const routes = [
     path: '/lista-tecnicas',
     name: 'lista-tecnicas',
     component: () => import(/* webpackChunkName: "about" */ '../views/ListaTecnicasView.vue')
+  },
+  {
+    path: '/lista-palavras',
+    name: 'lista-palavras',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ListaPalavrasView.vue')
   }
 ]
 

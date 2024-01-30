@@ -2,31 +2,432 @@
 	{
 		"Id": 1,
 		"Palavra": "Kara",
-		"Traducao": "Vazio",
-		"Tipo": "A Arte Marcial"
+		"Traducao": "Vazio"
 	},
 	{
 		"Id": 2,
 		"Palavra": "Te",
-		"Traducao": "M�o",
-		"Tipo": "A Arte Marcial"
+		"Traducao": "Mão"
 	},
 	{
 		"Id": 3,
 		"Palavra": "Do",
-		"Traducao": "Caminho",
-		"Tipo": "A Arte Marcial"
+		"Traducao": "Caminho"
 	},
 	{
 		"Id": 4,
-		"Palavra": "Karat�-Do",
-		"Traducao": "Vazio",
-		"Tipo": "A Arte Marcial"
+		"Palavra": "Karatê-Do",
+		"Traducao": "O caminho das mãos vazias"
 	},
 	{
 		"Id": 5,
-		"Palavra": "Kara",
-		"Traducao": "Vazio",
-		"Tipo": "A Arte Marcial"
+		"Palavra": "Bushi",
+		"Traducao": "Guerreiro"
+	},
+	{
+		"Id": 6,
+		"Palavra": "Dai",
+		"Traducao": "Grande"
+	},
+	{
+		"Id": 7,
+		"Palavra": "Bushidaikan",
+		"Traducao": "Escola do Grande Guerreiro"
+	},
+	{
+		"Id": 8,
+		"Palavra": "Dojo",
+		"Traducao": "Local de Treinamento"
+	},
+	{
+		"Id": 9,
+		"Palavra": "Dojo Kun",
+		"Traducao": "Código conduta do Dojo"
+	},
+	{
+		"Id": 10,
+		"Palavra": "Rei",
+		"Traducao": "Saudação (Sentado nos calcanhares)"
+	},
+	{
+		"Id": 11,
+		"Palavra": "Ritsurei",
+		"Traducao": "Saudação (Em pé)"
+	},
+	{
+		"Id": 12,
+		"Palavra": "Shihan",
+		"Traducao": "Grande Meste"
+	},
+	{
+		"Id": 13,
+		"Palavra": "Sempai",
+		"Traducao": "Aluno Superior"
+	},
+	{
+		"Id": 14,
+		"Palavra": "Shinden Ni Rei",
+		"Traducao": "Saudação ao Dojo"
+	},
+	{
+		"Id": 15,
+		"Palavra": "Sensei Ni Rei",
+		"Traducao": "Cumprimentando o professor"
+	},
+	{
+		"Id": 16,
+		"Palavra": "Shidoin Ni Rei",
+		"Traducao": "Saudação ao instrutor/aluno de nível após professor"
+	},
+	{
+		"Id": 17,
+		"Palavra": "Otagai Ni Rei",
+		"Traducao": "Saudação entre os colegas"
+	},
+	{
+		"Id": 18,
+		"Palavra": "Onegai Shimasu",
+		"Traducao": "Por favor, me ensine"
+	},
+	{
+		"Id": 19,
+		"Palavra": "Arigato Gozai Mashita",
+		"Traducao": "Muito obrigado!"
+	},
+	{
+		"Id": 20,
+		"Palavra": "Karategi",
+		"Traducao": "Traje do Karatê"
+	},
+	{
+		"Id": 21,
+		"Palavra": "Uwagi",
+		"Traducao": "Jaqueta"
+	},
+	{
+		"Id": 22,
+		"Palavra": "Zubon",
+		"Traducao": "Calça"
+	}
+	,
+	{
+		"Id": 23,
+		"Palavra": "Obi",
+		"Traducao": "Faixa"
+	}
+	,
+	{
+		"Id": 24,
+		"Palavra": "Dan",
+		"Traducao": "Nível ou classificação"
+	},
+	{
+		"Id": 25,
+		"Palavra": "Mudansha",
+		"Traducao": "Grau abaixo da faixa preta"
+	},
+	{
+		"Id": 26,
+		"Palavra": "Yudansha",
+		"Traducao": "Graus de faixa preta"
+	},
+	{
+		"Id": 27,
+		"Palavra": "Shugo",
+		"Traducao": "Alinhar-se"
+	},
+	{
+		"Id": 28,
+		"Palavra": "Kiotsuke",
+		"Traducao": "Atenção"
+	},
+	{
+		"Id": 29,
+		"Palavra": "Seiza",
+		"Traducao": "Sentado ( na posição de joelho, sobre calcanhares)"
+	},
+	{
+		"Id": 30,
+		"Palavra": "Kiritsu",
+		"Traducao": "Levante-se"
+	},
+	{
+		"Id": 31,
+		"Palavra": "Mokuso",
+		"Traducao": "Concentra-se"
+	},
+	{
+		"Id": 32,
+		"Palavra": "Mokuso Yame",
+		"Traducao": "Fim da concentração"
+	},
+	{
+		"Id": 33,
+		"Palavra": "Yoi",
+		"Traducao": "Prepara, atenção"
+	},
+	{
+		"Id": 34,
+		"Palavra": "Kamae",
+		"Traducao": "Em guarda"
+	},
+	{
+		"Id": 35,
+		"Palavra": "Hajime",
+		"Traducao": "Começar"
+	},
+	{
+		"Id": 36,
+		"Palavra": "Yame",
+		"Traducao": "Parar"
+	}
+	,
+	{
+		"Id": 37,
+		"Palavra": "Yasume",
+		"Traducao": "Descanso"
+	}
+	,
+	{
+		"Id": 38,
+		"Palavra": "Barai",
+		"Traducao": "Varredura"
+	}
+	,
+	{
+		"Id": 39,
+		"Palavra": "Bunkai",
+		"Traducao": "Aplicação da prática das técnicas de um kata"
+	},
+	{
+		"Id": 40,
+		"Palavra": "Chakugan",
+		"Traducao": "Olhar"
+	},
+	{
+		"Id": 41,
+		"Palavra": "Chi ma",
+		"Traducao": "Distância curta"
+	},
+	{
+		"Id": 42,
+		"Palavra": "Chudan",
+		"Traducao": "Nível médio, centro do corpo"
+	},
+	{
+		"Id": 43,
+		"Palavra": "Dachi",
+		"Traducao": "Postura"
+	},
+	{
+		"Id": 44,
+		"Palavra": "Domto",
+		"Traducao": "Respiração normal"
+	},
+	{
+		"Id": 45,
+		"Palavra": "Embusen",
+		"Traducao": "Linha de realização do kata"
+	},
+	{
+		"Id": 46,
+		"Palavra": "Fumikiri",
+		"Traducao": "Golpe Cortante"
+	},
+	{
+		"Id": 47,
+		"Palavra": "Fumikomi",
+		"Traducao": "Golpe esmagador"
+	},
+	{
+		"Id": 48,
+		"Palavra": "Gedan",
+		"Traducao": "Nível baixo, parte inferior da barriga e pernas"
+	},
+	{
+		"Id": 49,
+		"Palavra": "Geri",
+		"Traducao": "Técnica de pé (tanto ataques-chutes- e defesas)"
+	},
+	{
+		"Id": 50,
+		"Palavra": "Gyaku Kaiten",
+		"Traducao": "Giro de quadril contrário ao sentido da técnica"
+	},
+	{
+		"Id": 51,
+		"Palavra": "Hammi",
+		"Traducao": "Posição diagonal"
+	},
+	{
+		"Id": 52,
+		"Palavra": "Hara",
+		"Traducao": "Barriga"
+	},
+	{
+		"Id": 53,
+		"Palavra": "Hidari",
+		"Traducao": "Esquerda"
+	},
+	{
+		"Id": 54,
+		"Palavra": "Hiji ou Empi",
+		"Traducao": "Técnica de Cotovelo"
+	},
+	{
+		"Id": 55,
+		"Palavra": "Hikiashi",
+		"Traducao": "Retratação rápida do pé após o chute"
+	},
+	{
+		"Id": 56,
+		"Palavra": "Hikite",
+		"Traducao": "Retrocesso do braço aposto ao que golpeia"
+	},
+	{
+		"Id": 57,
+		"Palavra": "Hiza ou Hittsui",
+		"Traducao": "Técnica de Joelho"
+	},
+	{
+		"Id": 58,
+		"Palavra": "Jodan",
+		"Traducao": "Parte superior do corpo"
+	},
+	{
+		"Id": 59,
+		"Palavra": "Kaiten",
+		"Traducao": "Giro quadril"
+	},
+	{
+		"Id": 60,
+		"Palavra": "Kata",
+		"Traducao": "Forma, combinação de técnicas de ataque e defesa"
+	},
+	{
+		"Id": 61,
+		"Palavra": "Keage",
+		"Traducao": "Para cima"
+	},
+	{
+		"Id": 62,
+		"Palavra": "Kebanashi",
+		"Traducao": "Impactante"
+	},
+	{
+		"Id": 63,
+		"Palavra": "Kekomi",
+		"Traducao": "Penetrante"
+	},
+	{
+		"Id": 64,
+		"Palavra": "Ki",
+		"Traducao": "Energia interna"
+	},
+	{
+		"Id": 65,
+		"Palavra": "Kiai",
+		"Traducao": "Grito (liberação de energia concentrada)"
+	},
+	{
+		"Id": 66,
+		"Palavra": "Kime",
+		"Traducao": "Concentração de energia"
+	},
+	{
+		"Id": 67,
+		"Palavra": "Kokyu",
+		"Traducao": "Respirando"
+	},
+	{
+		"Id": 68,
+		"Palavra": "Kumite",
+		"Traducao": "Combate"
+	},
+	{
+		"Id": 69,
+		"Palavra": "Maai",
+		"Traducao": "Conhecimento de distância"
+	}
+	,
+	{
+		"Id": 70,
+		"Palavra": "Mae",
+		"Traducao": "Posição frontal"
+	},
+	{
+		"Id": 71,
+		"Palavra": "Migi",
+		"Traducao": "Direita"
+	},
+	{
+		"Id": 72,
+		"Palavra": "Seiken",
+		"Traducao": "Parte do punho que é feito as técnicas de zuki"
+	},
+	{
+		"Id": 73,
+		"Palavra": "Tanden",
+		"Traducao": "É um ponto localizado no abdômen, onde se encontra a energia (Ki)"
+	},
+	{
+		"Id": 74,
+		"Palavra": "Timing",
+		"Traducao": "Antecipação"
+	},
+	{
+		"Id": 75,
+		"Palavra": "To ma",
+		"Traducao": "Longa distância"
+	},
+	{
+		"Id": 76,
+		"Palavra": "Tori",
+		"Traducao": "O atacante (ao treinar técnicas de parceiros)"
+	},
+	{
+		"Id": 77,
+		"Palavra": "Tsuki (Zuki)",
+		"Traducao": "Técnica de soco direto"
+	},
+	{
+		"Id": 78,
+		"Palavra": "Uchi",
+		"Traducao": "Técnica de punho circular; Técnica de mão aberta"
+	},
+	{
+		"Id": 79,
+		"Palavra": "Uke",
+		"Traducao": "Técnica de defesa; Bloqueio"
+	},
+	{
+		"Id": 80,
+		"Palavra": "Ukete",
+		"Traducao": "Aquele que defenda (ao treinar técnicas em pares)"
+	},
+	{
+		"Id": 81,
+		"Palavra": "Ushi Ma",
+		"Traducao": "Distância Média"
+	},
+	{
+		"Id": 82,
+		"Palavra": "Ushiro",
+		"Traducao": "Técnica executada para trás"
+	},
+	{
+		"Id": 83,
+		"Palavra": "Yoko",
+		"Traducao": "Posição lateral"
+	},
+	{
+		"Id": 84,
+		"Palavra": "Yun Kaiten",
+		"Traducao": "Giro do quadril na mesma diração da técnica"
+	},
+	{
+		"Id": 85,
+		"Palavra": "Zanshin",
+		"Traducao": "Atitude mantal de alerta"
 	}
 ]
