@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-col-gutter-none justify-center">
+  <div class="row q-page-container-custom">
     <div class="col-12 text-center">
       <span class="text-bold sub-title">O que deseja praticar ?</span>
     </div>
@@ -9,16 +9,16 @@
     <div class="col-12 text-center">
       <span class="text-bold sub-title">Quantas perguntas ?</span>
     </div>
-    <div class="col-4 text-center">
+    <div class="col-12 text-center q-mb-xs">
       <q-btn text-color="black" class="full-width" @click="selecionarQuantidade(5)" dense :color="quantidade === 5 ? 'secondary' : 'amber'"  label="5" />
     </div>
-    <div class="col-4 text-center">
+    <div class="col-12 text-center q-mb-xs">
       <q-btn text-color="black" class="full-width" @click="selecionarQuantidade(10)" dense :color="quantidade === 10 ? 'secondary' : 'amber'"  label="10" />
     </div>
-    <div class="col-4 text-center">
-      <q-btn text-color="black" class="full-width"  @click="selecionarQuantidade(20)"  dense :color="quantidade > 10 ? 'secondary' : 'amber'"  label="Todos" />
+    <div class="col-12 text-center q-mb-xs">
+      <q-btn text-color="black" class="full-width"  @click="selecionarQuantidade(20)"  dense :color="quantidade > 10 ? 'secondary' : 'amber'"  label="Todas" />
     </div>
-    <div class="col-12 text-center q-mt-xl">
+    <div class="col-12 text-center q-mt-sm">
       <q-btn text-color="black" class="full-width"  @click.stop="iniciarQuiz()" dense color="amber" label="Iniciar Quiz" />
     </div>
   </div>

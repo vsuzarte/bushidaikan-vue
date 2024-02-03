@@ -18,25 +18,25 @@
     <div class="row q-col-gutter-none justify-center">
       <div class="col-12 text-center text-bold sub-title q-mb-md">--- Lista de Técnicas ---</div>
     </div>
-    <div v-for="tipoPostura in tipoPosturas" :key="tipoPostura.Id" class="row q-col-gutter-none justify-center q-mb-sm">
-      <div v-for="(postura, index) in getPosturaTipo(tipoPostura.Tipo)" :key="index" class="col-12 q-mb-md">
+    <div v-for="tipoTecnica in tipoTecnicas" :key="tipoTecnica.Id" class="row q-col-gutter-none justify-center q-mb-sm">
+      <div v-for="(tenica, index) in getTecnicaTipo(tipoTecnica.Tipo)" :key="index" class="col-12 q-mb-md">
         <q-card
         style="border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #FBC920;">
-          <img :src="getImagePath(postura)">
+          <img :src="getImagePath(tenica)">
           <q-card-section>
             <div class="col-12">
-              <span class="sub-title">{{ postura.Nome }}</span>
+              <span class="sub-title">{{ tenica.Nome }}</span>
             </div>
             <div class="col-12">
               <q-chip color="white" size="md">
                 <q-avatar><img :src="getJapaoPath"></q-avatar>
-                {{ postura.PosturaJP }}
+                {{ tenica.TecnicaJP }}
               </q-chip>
             </div>
             <div class="col-12">
               <q-chip color="white" size="md">
                 <q-avatar><img :src="getBrasilPath"></q-avatar>
-                {{ postura.PosturaBR }}
+                {{ tenica.TecnicaBR }}
               </q-chip>
             </div>
           </q-card-section>
@@ -57,7 +57,7 @@
 <script>
 
 import { onMounted, ref } from 'vue';
-import { usePosturasStore } from '@/stores/posturasStore.js';
+import { useTecnicasStore } from '@/stores/tenicasStore.js';
 import { useTiposStore } from '@/stores/tiposStore.js';
 
 export default {
@@ -65,23 +65,23 @@ export default {
   components: {
   },
   setup() {
-    const posturasStore = usePosturasStore();
+    const tenicasStore = useTecnicasStore();
     const tiposStore = useTiposStore();
-    const posturas = ref([]);
-    const tipoPosturas = ref([]);
+    const tenicas = ref([]);
+    const tipoTecnicas = ref([]);
 
     onMounted(() => {
-      posturasStore.carregarPosturas();
+      tenicasStore.carregarTecnicas();
       tiposStore.carregarTipos();
-      posturas.value = posturasStore.posturas;
-      tipoPosturas.value = tiposStore.tipos;
+      tenicas.value = tenicasStore.tenicas;
+      tipoTecnicas.value = tiposStore.tipos;
     });
 
     return {
-      posturasStore,
+      tenicasStore,
       tiposStore,
-      posturas,
-      tipoPosturas,
+      tenicas,
+      tipoTecnicas,
     };
   },
   data() {
@@ -90,12 +90,12 @@ export default {
     }
   },
   methods: {
-    getImagePath(postura) {
-      const imagem = postura.Imagem;
-      return require(`../assets/images/Posturas/${imagem}`);
+    getImagePath(tenica) {
+      const imagem = tenica.Imagem;
+      return require(`../assets/images/Tecnicas/${imagem}`);
     },
-    getPosturaTipo(tipo) {
-      return this.posturas.filter(p => p.Tipo === tipo);
+    getTecnicaTipo(tipo) {
+      return this.tenicas.filter(p => p.Tipo === tipo);
     },
     getLogoPath() {
       return require(`@/assets/images/logo.png`);
@@ -117,9 +117,9 @@ export default {
   },
   watch: {
     nomePustura(newNome) {
-      this.posturas = this.posturasStore.pesquisarPosturas(newNome);
-      const tipos = this.posturasStore.getTiposDePosturas(this.posturas);
-      this.tipoPosturas = this.tiposStore.getPorTipos(tipos);
+      this.tenicas = this.tenicasStore.pesquisarTecnicas(newNome);
+      const tipos = this.tenicasStore.getTiposDeTecnicas(this.tenicas);
+      this.tipoTecnicas = this.tiposStore.getPorTipos(tipos);
     },
   },
 }

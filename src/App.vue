@@ -1,8 +1,4 @@
 <template>
-  <q-layout>
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
+    <router-view />
 </template>
 <style></style>

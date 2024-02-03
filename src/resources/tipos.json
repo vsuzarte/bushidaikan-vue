@@ -1,8 +1,8 @@
 [
 	{
 		"Id": 1,
-		"Nome": "Posturas",
-		"Tipo": "Postura"
+		"Nome": "Tecnicas",
+		"Tipo": "Tecnica"
 	},
 	{
 		"Id": 2,

@@ -1,6 +1,6 @@
 <template>
   <div class="row q-col-gutter-none">
-      <div class="col-12 text-center text-bold sub-title q-mb-md">{{ correctOption.posturaBR }}</div>
+      <div class="col-12 text-center text-bold sub-title q-mb-md">{{ correctOption.tenicaBR }}</div>
       <div class="col-12 text-center">
         <img width="100%" :src="getImagePath()" style="border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #FBC920;">
       </div>
@@ -51,7 +51,7 @@
 
 <script>
 export default {
-  name: 'QuestaoPostura',
+  name: 'QuestaoTecnica',
   props: {
     currentQuestion: {
       type: Array,
@@ -69,14 +69,11 @@ export default {
   methods: {
     getImagePath() {
       const imagem = this.getCorrectOption().imagem;
-      return require(`../assets/images/Posturas/${imagem}`);
-    },
-    getImageErroPath() {
-      return require(`@/assets/images/errou.png`);
+      return require(`../assets/images/Tecnicas/${imagem}`);
     },
     getCorrectOption() {
-      const posturaCorreta = this.currentQuestion.find(postura => postura.isCorrect === true);
-      return posturaCorreta;
+      const tenicaCorreta = this.currentQuestion.find(tenica => tenica.isCorrect === true);
+      return tenicaCorreta;
     },
     selectAwnser(option, index) {
       this.selectedQuestion = option;
@@ -94,7 +91,7 @@ export default {
       this.$emit('continuar-quiz', this.acertou);
       this.acertou = false;
     },
-    playSound(acertou) {
+    playSound() {
       if (this.acertou) {
         const audio = new Audio(require(`@/assets/sounds/success.mp3`));
         audio.play();

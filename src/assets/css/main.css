@@ -1,6 +1,5 @@
   .title {
     font-size: 1.476rem;
-    color: #FFC107;
   }
 
   .sub-title {
@@ -26,4 +25,13 @@
     font-size: 1.3rem;
     font-weight: bolder;
     padding: 0.5rem
+  }
+
+  .q-page-container-custom {
+    padding: 1em;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-around;
   }
