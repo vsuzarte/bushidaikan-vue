@@ -7,7 +7,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/HomeView.vue')
   },
   {
-    path: '/quiz-tenicas',
+    path: '/quiz-tecnicas',
     name: 'QuizTecnicas',
     component: () => import(/* webpackChunkName: "about" */ '../views/QuizTecnicasView.vue'),
   },

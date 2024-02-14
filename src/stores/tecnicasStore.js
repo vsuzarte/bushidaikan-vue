@@ -1,36 +1,36 @@
 import { defineStore } from 'pinia';
 
-export const useTecnicasStore = defineStore('tenicas', {
+export const useTecnicasStore = defineStore('tecnicas', {
   state: () => ({
-    tenicas: [],
+    tecnicas: [],
     tiposTecnicas: [],
     selecionados: [],
   }),
 
   actions: {
     carregarTecnicas() {
-        this.tenicas = require(`@/resources/tenicas.json`);
+        this.tecnicas = require(`@/resources/tecnicas.json`);
     },
 
     getTecnicasPorTipo(tipo) {
-      return this.tenicas.filter((tenica) => tenica.Tipo === tipo);
+      return this.tecnicas.filter((tecnica) => tecnica.Tipo === tipo);
     },
 
     getTecnicasPorNome(nome) {
-      const filtradas = this.tenicas.filter((tenica) =>tenica.Nome.toLowerCase().includes(nome.toLowerCase()));
+      const filtradas = this.tecnicas.filter((tecnica) =>tecnica.Nome.toLowerCase().includes(nome.toLowerCase()));
       if(filtradas.length <= 0){
-        return this.tenicas;
+        return this.tecnicas;
       }
       return filtradas;
     },
 
     pesquisarTecnicas(nome) {
-      if (!Array.isArray(this.tenicas) || !nome || typeof nome !== 'string') {
-          return this.tenicas;
+      if (!Array.isArray(this.tecnicas) || !nome || typeof nome !== 'string') {
+          return this.tecnicas;
       }
   
       const pesquisa = nome.toLowerCase();
-      const filtradas = this.tenicas.filter(item =>
+      const filtradas = this.tecnicas.filter(item =>
           (item.Nome && item.Nome.toLowerCase().includes(pesquisa)) ||
           (item.TecnicaBR && item.TecnicaBR.toLowerCase().includes(pesquisa)) ||
           (item.TecnicaJP && item.TecnicaJP.toLowerCase().includes(pesquisa)) ||
@@ -38,7 +38,7 @@ export const useTecnicasStore = defineStore('tenicas', {
       );
 
       if(filtradas.length <= 0){
-        return this.tenicas;
+        return this.tecnicas;
       }
   
       return filtradas;
@@ -46,19 +46,26 @@ export const useTecnicasStore = defineStore('tenicas', {
 
     getTecnicasPorTipos(tipos) {
       if(tipos.length <= 0){
-        return this.tenicas;
+        return this.tecnicas;
       }
-      return this.tenicas.filter((tenica) => tipos.includes(tenica.Tipo));
+      return this.tecnicas.filter((tecnica) => tipos.includes(tecnica.Tipo));
+    },
+
+    filterAll(tipos, nome) {
+      if(tipos.length <= 0 || nome.length <= 0){
+        return this.tecnicas;
+      }
+      return this.tecnicas.filter((tecnica) => tipos.includes(tecnica.Tipo) || tecnica.Nome && tecnica.Nome.toLowerCase().includes(nome));
     },
 
     adicionarSelecionados(selecionados){
       this.selecionados = selecionados;
     },
 
-    getTiposDeTecnicas(tenicas){
+    getTiposDeTecnicas(tecnicas){
       const valoresUnicos = new Set();
-      tenicas.forEach(tenica => {
-        valoresUnicos.add(tenica.Tipo);
+      tecnicas.forEach(tecnica => {
+        valoresUnicos.add(tecnica.Tipo);
       });
 
       return [...valoresUnicos];

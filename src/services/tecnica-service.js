@@ -1,35 +1,35 @@
 export default class QuestionService {
-  getRandomQuestions(tenicas, quantidade) {
+  getRandomQuestions(tecnicas, quantidade) {
     let numQuestions = 0;
     if(quantidade > 10){
-      numQuestions = tenicas.length;
+      numQuestions = tecnicas.length;
     }else{
-      numQuestions = quantidade >= tenicas.length ? tenicas.length : quantidade;
+      numQuestions = quantidade >= tecnicas.length ? tecnicas.length : quantidade;
     }
 
-    if(numQuestions === tenicas.length){
-      return this.createQuestionsForAllTecnicas(tenicas);
+    if(numQuestions === tecnicas.length){
+      return this.createQuestionsForAllTecnicas(tecnicas);
     }else{
-      return this.createRandomQuestions(tenicas, numQuestions);
+      return this.createRandomQuestions(tecnicas, numQuestions);
     }
   }
 
-  createQuestionsForAllTecnicas(tenicas) {
+  createQuestionsForAllTecnicas(tecnicas) {
     const selectedTecnicas = [];
-    for (const currentQuestion of tenicas) {
-      const shuffledOptions = this.generateOptionsForTecnica(tenicas, currentQuestion);
+    for (const currentQuestion of tecnicas) {
+      const shuffledOptions = this.generateOptionsForTecnica(tecnicas, currentQuestion);
       selectedTecnicas.push(shuffledOptions);
     }
     return selectedTecnicas;
   }
 
-  generateOptionsForTecnica(tenicas, currentQuestion) {
-    const otherTecnicas = tenicas.filter(tenica => tenica !== currentQuestion);
+  generateOptionsForTecnica(tecnicas, currentQuestion) {
+    const otherTecnicas = tecnicas.filter(tecnica => tecnica !== currentQuestion);
     const correctOption = {
       nome: currentQuestion.Nome,
       imagem: currentQuestion.Imagem,
-      tenicaBR: currentQuestion.TecnicaBR,
-      tenicaJP: currentQuestion.TecnicaJP,
+      tecnicaBR: currentQuestion.TecnicaBR,
+      tecnicaJP: currentQuestion.TecnicaJP,
       isCorrect: true,
     };
     
@@ -52,11 +52,11 @@ export default class QuestionService {
     return shuffledArray;
   }
 
-  createRandomQuestions(tenicas, numQuestions) {
-    const allTecnicas = [...tenicas];
+  createRandomQuestions(tecnicas, numQuestions) {
+    const allTecnicas = [...tecnicas];
     const selectedTecnicas = [];
     for (let i = 0; i < numQuestions; i++) {
-      const remainingTecnicas = allTecnicas.filter(tenica => !selectedTecnicas.includes(tenica));
+      const remainingTecnicas = allTecnicas.filter(tecnica => !selectedTecnicas.includes(tecnica));
       const randomIndex = Math.floor(Math.random() * remainingTecnicas.length);
       const currentQuestion = remainingTecnicas[randomIndex];
       

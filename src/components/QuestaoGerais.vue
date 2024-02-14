@@ -1,6 +1,6 @@
 <template>
   <div class="row q-col-gutter-none">
-    <div class="col-12 text-center text-bold sub-title q-mb-md">{{ currentQuestion.Pergunta }}</div>
+    <div class="col-12 text-center text-bold sub-title">{{ currentQuestion.Pergunta }}</div>
     <div v-if="!btnIsConfirm" class="col-12">
       <q-btn v-for="(option, index) in shuffledOptions" :key="index" :disabled="btnIsConfirm" class="full-width q-mb-xs"
         :color="index === selectedButtonIndex ? 'secondary' : 'amber'" text-color="black"

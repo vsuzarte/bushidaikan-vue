@@ -10,7 +10,7 @@
           <span class="text-bold title">KARATÊ-DO BUSHIDAIKAN</span>
         </div>
         <div class="col-12 text-center">
-          <q-img :src="getImagePath()" :ratio="1" width="40%" />
+          <q-img :src="getImagePath()" :ratio="1" class="imagem"/>
         </div>
         <div class="col-12 text-center">
           <span class="sub-title text-bold ">Karate-Do de</span>
@@ -55,7 +55,7 @@ export default {
   name: 'HomeView',
   components: {
     HeaderWithLogos
-},
+  },
   methods: {
     getImagePath() {
       return require(`@/assets/images/logo.png`);
@@ -67,5 +67,19 @@ export default {
 }
 </script>
 <style scoped>
+.imagem {
+  width: 30%;
+}
 
+@media (min-width: 1000px) {
+  .imagem {
+    width: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .imagem {
+    width: 40%;
+  }
+}
 </style>

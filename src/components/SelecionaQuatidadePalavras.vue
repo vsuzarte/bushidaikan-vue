@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-col-gutter-none justify-center">
+  <div class="row q-col-gutter-none justify-center align-center">
     <div class="col-12 text-center">
       <span class="text-bold sub-title">Quantas perguntas ?</span>
     </div>

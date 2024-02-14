@@ -5,8 +5,8 @@
     "Imagem": "Tachi-Kata/Soto-Hachiji-Shizentai-Dachi.png",
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi Kata",
-    "Tipo": "Postura",  
-    "Faixas": [],
+    "Tipo": "Postura",
+    "Audio": "Soto-Hachiji-Shizentai-Dachi.mp3",
     "Katas": []
   },
   {
@@ -16,6 +16,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi Kata",
     "Tipo": "Postura",
+    "Audio": "Migi-Ashi-Mae-Shizentai-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -26,6 +27,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi Kata",
     "Tipo": "Postura",
+    "Audio": "Hidari-Ashi-Mae-Shizentai-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -36,6 +38,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Jun Shizentei-Dachi",
     "Tipo": "Postura",
+    "Audio": "Heisoku-Dachi.mp3",
     "Faixas": [],
     "Katas": [ "Naihanchi Shodan" ]
   },
@@ -46,6 +49,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Jun Shizentei-Dachi",
     "Tipo": "Postura",
+    "Audio": "Chokuritsu-Fudo-Dachi.mp3",
     "Faixas": [],
     "Katas": [""]
   },
@@ -56,6 +60,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Nekoashi-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -66,6 +71,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Jigotai-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -76,6 +82,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Naihanchi-Dachi.mp3",
     "Faixas": [],
     "Katas": [ "Naihanchi Shodan" ]
   },
@@ -86,6 +93,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Zenkutsu-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -96,6 +104,7 @@
     "TecnicaBR": "Tecnica",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Naname-Zenkutsu-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -106,6 +115,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Kokutsu-Dashi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -115,6 +125,7 @@
     "Imagem": "Tachi/Kosa-Dachi.png",
     "TecnicaBR": "Postura",
     "TecnicaJP": "Jun Shizentei-Dachi",
+    "Audio": "Kosa-Dachi.mp3",
     "Tipo": "Postura",
     "Faixas": ["Branca", "Cinza"],
     "Katas": [ "Naihanchi Shodan" ]
@@ -126,6 +137,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Ipon-Ashi-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -136,6 +148,7 @@
     "TecnicaBR": "Postura",
     "TecnicaJP": "Tachi",
     "Tipo": "Postura",
+    "Audio": "Laigoshi-Dachi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -146,6 +159,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Jodan-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -156,6 +170,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Chudan-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -166,6 +181,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Gedan-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -176,6 +192,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Kaku-Suki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -186,16 +203,18 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Tomoe-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
   {
     "Id": 20,
-    "Nome": "Or-Zuki",
+    "Nome": "Oi-Zuki",
     "Imagem": "Seiken-Waza/Or-Zuki.png",
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Oi-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -206,6 +225,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Sayu-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -216,6 +236,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Kakushi-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -226,6 +247,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Wari-Uke-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -236,6 +258,7 @@
     "TecnicaBR": "Técnica de Punho",
     "TecnicaJP": "Seiken Waza",
     "Tipo": "Punho",
+    "Audio": "Morote-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -246,6 +269,7 @@
     "TecnicaBR": "Técnica de Dedos",
     "TecnicaJP": "Yube Waza",
     "Tipo": "Dedos",
+    "Audio": "Nukite-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -256,6 +280,7 @@
     "TecnicaBR": "Técnica de Dedos",
     "TecnicaJP": "Yube Waza",
     "Tipo": "Dedos",
+    "Audio": "Morote-Nuki-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -266,6 +291,7 @@
     "TecnicaBR": "Técnica de Dedos",
     "TecnicaJP": "Yube Waza",
     "Tipo": "Dedos",
+    "Audio": "Shi-Zuki.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -276,6 +302,7 @@
     "TecnicaBR": "Técnica de Ataque",
     "TecnicaJP": "Uchi Waza",
     "Tipo": "Ataque",
+    "Audio": "Uraken-Uchi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -286,6 +313,7 @@
     "TecnicaBR": "Técnica de Ataque",
     "TecnicaJP": "Uchi Waza",
     "Tipo": "Ataque",
+    "Audio": "Kentsui-Uchi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -296,6 +324,7 @@
     "TecnicaBR": "Técnica de Ataque",
     "TecnicaJP": "Uchi Waza",
     "Tipo": "Ataque",
+    "Audio": "Kyobu-Shuto-Uchi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -306,6 +335,7 @@
     "TecnicaBR": "Técnica de Ataque",
     "TecnicaJP": "Uchi Waza",
     "Tipo": "Ataque",
+    "Audio": "Kyobu-Morote-Shuto-Uchi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -316,6 +346,7 @@
     "TecnicaBR": "Técnica de Ataque",
     "TecnicaJP": "Uchi Waza",
     "Tipo": "Ataque",
+    "Audio": "Kyobu-Soete Shuto-Uchi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -326,6 +357,7 @@
     "TecnicaBR": "Técnica de Ataque",
     "TecnicaJP": "Uchi Waza",
     "Tipo": "Ataque",
+    "Audio": "Kosa-Haito-Uchi.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -336,6 +368,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Tate-Hiji-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -346,6 +379,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Yoko-Hiji-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -356,6 +390,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Ushiro-Hiji-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -366,6 +401,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Sasae-Hiji-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -376,6 +412,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Hiza-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -386,6 +423,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Jodan-Shotei-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -396,6 +434,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Chudan-Shotei-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -406,6 +445,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Gedan-Shotei-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -416,6 +456,7 @@
     "TecnicaBR": "Técnica Esmagadora",
     "TecnicaJP": "Ate Waza",
     "Tipo": "Esmagadora",
+    "Audio": "Tomoe-Shotei-Ate.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -426,6 +467,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Jodan-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -436,6 +478,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Soto-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -446,6 +489,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Yoko-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -456,6 +500,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Uchi-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -466,6 +511,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Gedan-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -476,6 +522,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Gedan-Yoko-Barai-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -486,6 +533,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Sasae-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -496,16 +544,18 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Sayu-Barai-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
   {
     "Id": 51,
-    "Nome": "Joda-Wari-Uke",
+    "Nome": "Jodan-Wari-Uke",
     "Imagem": "Seiken-Ude-Uke/Joda-Wari-Uke.png",
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Jodan-Wari-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -516,6 +566,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Wari-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -526,6 +577,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Jodan-Kosa-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -536,6 +588,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Gedan-Kosa-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -546,6 +599,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Morote-Soe-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -556,6 +610,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Soto-Mawashi-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -566,6 +621,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Morote-Barai-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -576,6 +632,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Hazushi-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -586,6 +643,7 @@
     "TecnicaBR": "Defesa de Antebraço",
     "TecnicaJP": "Seiken-Ude-Uke",
     "Tipo": "Defesa",
+    "Audio": "Otoshi-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -596,6 +654,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Soto-Shuto-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -606,6 +665,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Jodan-Uchi-Soto-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -616,6 +676,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Yoko-Shuto-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -626,6 +687,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Gedan-Shuto-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -636,6 +698,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Gedan-Shuto-Yoko-Barai-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -646,6 +709,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Hasami-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -656,6 +720,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Makite-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -666,6 +731,7 @@
     "TecnicaBR": "Defesa com Faca da Mão",
     "TecnicaJP": "Shuto e Haito-Uke",
     "Tipo": "Defesa",
+    "Audio": "Magetori-Barai-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -676,6 +742,7 @@
     "TecnicaBR": "Defesa com Faca e Palma da Mão",
     "TecnicaJP": "Shuto-Haito e Shotei-Uke",
     "Tipo": "Defesa",
+    "Audio": "Torite-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -686,6 +753,7 @@
     "TecnicaBR": "Defesa com Faca e Palma da Mão",
     "TecnicaJP": "Shuto-Haito e Shotei-Uke",
     "Tipo": "Defesa",
+    "Audio": "Sagurite-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -696,6 +764,7 @@
     "TecnicaBR": "Defesa com Faca e Palma da Mão",
     "TecnicaJP": "Shuto-Haito e Shotei-Uke",
     "Tipo": "Defesa",
+    "Audio": "Gedan-Haito-Yoko-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -706,6 +775,7 @@
     "TecnicaBR": "Defesa com Faca e Palma da Mão",
     "TecnicaJP": "Shuto-Haito e Shotei-Uke",
     "Tipo": "Defesa",
+    "Audio": "Chudan-Shotei-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -716,6 +786,7 @@
     "TecnicaBR": "Defesa com Palma da Mão",
     "TecnicaJP": "Shotei-Uke",
     "Tipo": "Defesa",
+    "Audio": "Gedan-Shotei-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -726,6 +797,7 @@
     "TecnicaBR": "Defesa com Cotovelo",
     "TecnicaJP": "Hijii-Uke",
     "Tipo": "Defesa",
+    "Audio": "Hiji-Uke.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -736,6 +808,7 @@
     "TecnicaBR": "Técnica de Chutes",
     "TecnicaJP": "Keri-Kata",
     "Tipo": "Chute",
+    "Audio": "Kyobo-Geri.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -746,6 +819,7 @@
     "TecnicaBR": "Técnica de Chutes",
     "TecnicaJP": "Keri-Kata",
     "Tipo": "Chute",
+    "Audio": "Fukubu-Geri.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -756,6 +830,7 @@
     "TecnicaBR": "Técnica de Chutes",
     "TecnicaJP": "Keri-Kata",
     "Tipo": "Chute",
+    "Audio": "Kinteki-Geri.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -766,6 +841,7 @@
     "TecnicaBR": "Técnica de Chutes",
     "TecnicaJP": "Keri-Kata",
     "Tipo": "Chute",
+    "Audio": "Sokuto-Geri.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -776,6 +852,7 @@
     "TecnicaBR": "Movimentos Intermediários",
     "TecnicaJP": "",
     "Tipo": "MovimentosIntermediarios",
+    "Audio": "Suirakan-No-Kamae.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -786,6 +863,7 @@
     "TecnicaBR": "Movimentos Intermediários",
     "TecnicaJP": "",
     "Tipo": "MovimentosIntermediarios",
+    "Audio": "Ryu-No-Shita-No-Kamae.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -796,6 +874,7 @@
     "TecnicaBR": "Movimentos Intermediários",
     "TecnicaJP": "",
     "Tipo": "MovimentosIntermediarios",
+    "Audio": "Sagurite-No-Kamae.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -806,6 +885,7 @@
     "TecnicaBR": "Movimentos Intermediários",
     "TecnicaJP": "",
     "Tipo": "MovimentosIntermediarios",
+    "Audio": "Hotoke-Gamae.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -816,6 +896,7 @@
     "TecnicaBR": "Movimentos Intermediários",
     "TecnicaJP": "",
     "Tipo": "MovimentosIntermediarios",
+    "Audio": "Tenshini-Kamae.mp3",
     "Faixas": [],
     "Katas": []
   },
@@ -826,6 +907,7 @@
     "TecnicaBR": "Movimentos Intermediários",
     "TecnicaJP": "",
     "Tipo": "MovimentosIntermediarios",
+    "Audio": "Ura-Gamae.mp3",
     "Faixas": [],
     "Katas": []
   }

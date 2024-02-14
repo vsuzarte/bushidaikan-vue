@@ -1,64 +1,19 @@
 <template>
-  <div class="q-pa-md ">
-    <q-header bordered>
-      <q-toolbar class="bg-dark">
-        <q-toolbar-title>
-          <q-btn round color="amber" to="/" text-color="black" icon="home" />
-        </q-toolbar-title>
-        <q-avatar>
-        <img :src="getLogoPath()">
-      </q-avatar>
-      </q-toolbar>
-    </q-header>
-    <div v-if="!finalizado">
-      <selecionar-quantidade-palavras v-if="!quizIniciado" @iniciar-quiz="iniciarQuiz"></selecionar-quantidade-palavras>
-      <questao-palavra v-else @continuar-quiz="nextQuestion" :currentQuestion="getCurrentQuestion"></questao-palavra>
-    </div>
-    <div v-else>
-      <div class="row q-col-gutter-none">
-        <div class="col-12 text-center">
-          <span class="sub-title">OKINAWA SHORIN-RYU</span>
-        </div>  
-        <div class="col-12 text-center">
-          <span class="sub-title">KARATÊ-DO BUSHIDAIKAN</span>
-        </div>  
-        <div class="col-6 text-center" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <q-img width="50%" :aspect-ratio="1" :src="getLogoPath()"></q-img>
-          </div>
-          <div class="col-6">
-            <q-img width="100%" :aspect-ratio="1" :src="getLogoPath2()"></q-img>
-          </div>
-          <div v-if="score > 0" class="col-12 text-center">
-            <div class="col-12">
-              <q-img class="col-12" width="40%" :aspect-ratio="1" :src="getTrofeuPath()"></q-img>
-            </div>
-            <div class="col-12">
-              <p>Você acertou o total de</p>
-            </div>
-            <div class="col-12 text-center bg-amber">
-              <span class="sub-title">{{score}} de {{ score + erros }}</span>
-            </div>
-          </div>
-          <div v-else class="col-12 text-center">
-            <div class="col-12">
-              <q-img class="col-12" width="40%" :aspect-ratio="1" :src="getSocoPath()"></q-img>
-            </div>
-            <div class="col-12">
-              <p>Infelizmente você não pontuou</p>
-            </div>
-          </div>
-          <div class="col-12 text-center">
-              <p>Continue estudando para aumentar seu conhecimento!</p>
-            </div>
-          <div class="col-12 q-mb-sm">
-            <q-btn color="negative" text-color="white" class="full-width" to="/" block>Voltar ao ínicio</q-btn>
-          </div>
-          <div class="col-12 q-mb-sm">
-            <q-btn color="amber" text-color="black" class="full-width" @click.stop="reiniciar()" block>Treinar novamente</q-btn>
-          </div>
-        </div>
-    </div>
-  </div>
+  <q-layout>
+    <header-with-logos titulo="Quiz Palavras"></header-with-logos>
+    <q-page-container class="q-page-container-custom">
+      <div v-if="!finalizado">
+        <selecionar-quantidade-palavras v-if="!quizIniciado" @iniciar-quiz="iniciarQuiz"></selecionar-quantidade-palavras>
+        <questao-palavra v-else @continuar-quiz="nextQuestion" :currentQuestion="getCurrentQuestion"></questao-palavra>
+      </div>
+      <div v-else>
+        <Placar @reiniciar-quiz="reiniciar" :score="score" :erros="erros"></placar>
+      </div>
+    </q-page-container>
+    <q-footer class="bg-white text-black text-center items-center">
+      <q-btn color="secondary" to="/" text-color="black" icon="arrow_back" label="Voltar" />
+    </q-footer>
+  </q-layout>
 </template>
 
 <script>
@@ -68,10 +23,12 @@ import { usePalavrasStore } from '@/stores/palavrasStore.js';
 import PalavrasService from '@/services/palavras-service.js';
 import SelecionarQuantidadePalavras from '../components/SelecionaQuatidadePalavras.vue';
 import QuestaoPalavra from '../components/QuestaoPalavra.vue';
+import HeaderWithLogos from '@/components/HeaderWithLogos.vue';
+import Placar from '@/components/Placar.vue';
 
 export default {
   name: 'QuizPalavras',
-  components: { SelecionarQuantidadePalavras, QuestaoPalavra },
+  components: { SelecionarQuantidadePalavras, QuestaoPalavra, HeaderWithLogos, Placar },
   setup() {
     const palavrasStore = usePalavrasStore();
     const palavrasService = new PalavrasService();
@@ -134,7 +91,7 @@ export default {
     getSocoPath() {
       return require(`@/assets/images/punho.png`);
     },
-    getTrofeuPath(){
+    getTrofeuPath() {
       return require(`@/assets/images/trofeu.png`);
     },
   },
@@ -146,5 +103,4 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
