@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { Capacitor } from '@capacitor/core';
 
 const routes = [
   {
@@ -31,6 +30,11 @@ const routes = [
     path: '/quiz-gerais',
     name: 'quiz-gerais',
     component: () => import(/* webpackChunkName: "about" */ '../views/QuizGeraisView.vue')
+  },
+  {
+    path: '/quiz-audio',
+    name: 'quiz-audio',
+    component: () => import(/* webpackChunkName: "about" */ '../views/QuizAudioView.vue')
   }
 ]
 
@@ -38,21 +42,5 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-
-router.isReady().then(() => {
-  if (Capacitor.isNativePlatform()) {
-    // Adiciona um ouvinte para o evento 'hardwareBackButton' do Capacitor
-    Capacitor.addListener('hardwareBackButton', () => {
-      // Verifica se estamos na página inicial
-      if (router.currentRoute.value.path !== '/') {
-        // Se não estiver na página inicial, navegue de volta para ela
-        router.push('/');
-      } else {
-        // Se estiver na página inicial, saia do aplicativo (ou faça qualquer outra ação desejada)
-        // Capacitor.Plugins.App.exitApp(); // Se desejar sair do aplicativo
-      }
-    });
-  }
-});
 
 export default router

@@ -38,6 +38,7 @@ export default class QuestionService {
     const incorrectOptions = incorrects.map(incorrectTecnica => ({
       nome: incorrectTecnica.Nome,
       audio: incorrectTecnica.Audio,
+      imagem: incorrectTecnica.Imagem,
       isCorrect: false,
     }));
     

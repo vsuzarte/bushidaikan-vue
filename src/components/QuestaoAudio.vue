@@ -1,42 +1,47 @@
 <template>
-  <div class="row">
-    <div class="col-12 text-center text-bold sub-title">{{ correctOption.tecnicaBR }}</div>
+  <div class="row justify-center">
     <div class="col-12 text-center">
-      <img class="imagem" :src="getImagePath()"
-        style="border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #FBC920;">
+      <q-btn class="q-ma-lg" icon="volume_up" outline color="secondary"
+        @click="getAudioPath(correctOption.audio)">Ouvir {{ correctOption.tecnicaBR  }}</q-btn>
     </div>
-    <template v-if="!btnIsConfirm">
+    <div class="row text-center" v-if="!btnIsConfirm">
+      <div v-for="(option, index) in shuffledOptions" :key="index" class="col-12 cards">
+        <q-card class="my-card q-mb-sm" bordered flat>
+          <img :src="getImagePath(option.imagem)">
+          <q-card-actions>
+            <q-btn :disabled="btnIsConfirm" class="full-width q-mb-xs"
+              :color="index === selectedButtonIndex ? 'secondary' : 'amber'" text-color="black"
+              @click.stop="selectAwnser(option, index)" label="Selecionar" />
+          </q-card-actions>
+        </q-card>
+      </div>
       <div class="col-12">
-        <q-btn v-for="(option, index) in shuffledOptions" :key="index" :disabled="btnIsConfirm" class="full-width q-mb-xs"
-          :color="index === selectedButtonIndex ? 'secondary' : 'amber'" text-color="black"
-          @click.stop="selectAwnser(option, index)">
-          {{ option.nome }}
-        </q-btn>
-        <q-btn class="full-width" color="primary" @click.stop="checkAwnser()" :disabled="selectedQuestion === null"
+        <q-btn class="full-width q-mb-lg" color="primary" @click.stop="checkAwnser()" :disabled="selectedQuestion === null"
           block>Confirmar</q-btn>
       </div>
-    </template>
-    <template v-else>
-      <resposta :acertou="acertou" :respostaCorreta="correctOption.nome" :respostaErrada="selectedQuestion.nome"></resposta>
-      <div class="col-12 q-mt-md">
+    </div>
+    <div class="row text-center" v-else>
+      <resposta-audio :acertou="acertou" :respostaCorreta="correctOption" :respostaErrada="selectedQuestion">
+      </resposta-audio>
+      <div class="col-12 q-mt-md cards">
         <q-btn text-color="black" class="full-width q-mb-xs" color="amber" @click.stop="nextQuestion()">Continuar</q-btn>
       </div>
-    </template>
+    </div>
   </div>
 </template>
-
+  
 <script>
-import Resposta from './Resposta.vue';
+import RespostaAudio from './RespostaAudio.vue';
 
 export default {
-  name: 'QuestaoTecnica',
+  name: 'QuestaoAudio',
   props: {
     currentQuestion: {
       type: Array,
       required: true,
     },
   },
-  components: { Resposta },
+  components: { RespostaAudio },
   data() {
     return {
       btnIsConfirm: false,
@@ -46,8 +51,7 @@ export default {
     };
   },
   methods: {
-    getImagePath() {
-      const imagem = this.getCorrectOption().imagem;
+    getImagePath(imagem) {
       return require(`../assets/images/Tecnicas/${imagem}`);
     },
     getCorrectOption() {
@@ -57,7 +61,6 @@ export default {
     selectAwnser(option, index) {
       this.selectedQuestion = option;
       this.selectedButtonIndex = index;
-      this.getAudioPath(option.audio);
     },
     checkAwnser() {
       this.btnIsConfirm = true;
@@ -97,12 +100,18 @@ export default {
   },
 }
 </script>
-
+  
 <style scoped>
-
-.imagem{
-  width: 25%;
+.my-card {
+  width: 100%;
+  max-width: 250px;
 }
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
 
 @media (max-width: 1500px) {
   .imagem {
@@ -122,3 +131,4 @@ export default {
   }
 }
 </style>
+  

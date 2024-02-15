@@ -25,16 +25,19 @@
           <q-btn color="amber" text-color="black" class="full-width" to="/quiz-tecnicas" block>Treinar Técnicas</q-btn>
         </div>
         <div class="col-12 q-mb-sm">
-          <q-btn color="black" class="full-width" to="/lista-tecnicas" block>Lista de Técnicas</q-btn>
+          <q-btn color="black" text-color="white" class="full-width" to="/quiz-audio" block>Treinar Técnicas Áudio</q-btn>
         </div>
         <div class="col-12 q-mb-sm">
-          <q-btn color="amber" text-color="black" class="full-width" to="/quiz-palavras" block>Treinar Vocabulário</q-btn>
+          <q-btn color="amber" text-color="black" class="full-width" to="/lista-tecnicas" block>Lista de Técnicas</q-btn>
         </div>
         <div class="col-12 q-mb-sm">
-          <q-btn color="black" class="full-width" to="/lista-palavras" block>Vacabulário</q-btn>
+          <q-btn color="black" text-color="white" class="full-width" to="/quiz-palavras" block>Treinar Vocabulário</q-btn>
+        </div>
+        <div class="col-12 q-mb-sm">
+          <q-btn color="amber" text-color="black" class="full-width" to="/lista-palavras" block>Vacabulário</q-btn>
         </div>
         <div class="col-12">
-          <q-btn color="amber" text-color="black" class="full-width" to="/quiz-gerais" block>Treinar Conhecimentos
+          <q-btn color="black" text-color="white" class="full-width" to="/quiz-gerais" block>Treinar Conhecimentos
             gerais</q-btn>
         </div>
       </div>
