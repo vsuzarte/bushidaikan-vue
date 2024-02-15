@@ -9,9 +9,7 @@
       <div v-else>
         <placar @reiniciar-quiz="reiniciar" :score="score" :erros="erros"></placar>
       </div>
-
     </q-page-container>
-
     <q-footer class="bg-white text-black text-center items-center">
       <q-btn color="secondary" to="/" text-color="black" icon="arrow_back" label="Voltar" />
     </q-footer>

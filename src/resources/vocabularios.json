@@ -2,432 +2,517 @@
 	{
 		"Id": 1,
 		"Palavra": "Kara",
-		"Traducao": "Vazio"
+		"Traducao": "Vazio",
+		"Audio": "Kara.mp3"
 	},
 	{
 		"Id": 2,
 		"Palavra": "Te",
-		"Traducao": "Mão"
+		"Traducao": "Mão",
+		"Audio": "Te.mp3"
 	},
 	{
 		"Id": 3,
 		"Palavra": "Do",
-		"Traducao": "Caminho"
+		"Traducao": "Caminho",
+		"Audio": "Do.mp3"
 	},
 	{
 		"Id": 4,
 		"Palavra": "Karatê-Do",
-		"Traducao": "O caminho das mãos vazias"
+		"Traducao": "O caminho das mãos vazias",
+		"Audio": "Karate-Do.mp3"
 	},
 	{
 		"Id": 5,
 		"Palavra": "Bushi",
-		"Traducao": "Guerreiro"
+		"Traducao": "Guerreiro",
+		"Audio": "Bushi.mp3"
 	},
 	{
 		"Id": 6,
 		"Palavra": "Dai",
-		"Traducao": "Grande"
+		"Traducao": "Grande",
+		"Audio": "Dai.mp3"
 	},
 	{
 		"Id": 7,
 		"Palavra": "Bushidaikan",
-		"Traducao": "Escola do Grande Guerreiro"
+		"Traducao": "Escola do Grande Guerreiro",
+		"Audio": "Bushidaikan.mp3"
 	},
 	{
 		"Id": 8,
 		"Palavra": "Dojo",
-		"Traducao": "Local de Treinamento"
+		"Traducao": "Local de Treinamento",
+		"Audio": "Dojo.mp3"
 	},
 	{
 		"Id": 9,
 		"Palavra": "Dojo Kun",
-		"Traducao": "Código conduta do Dojo"
+		"Traducao": "Código conduta do Dojo",
+		"Audio": "Dojo-Kun.mp3"
 	},
 	{
 		"Id": 10,
 		"Palavra": "Rei",
-		"Traducao": "Saudação (Sentado nos calcanhares)"
+		"Traducao": "Saudação (Sentado nos calcanhares)",
+		"Audio": "Rei.mp3"
 	},
 	{
 		"Id": 11,
 		"Palavra": "Ritsurei",
-		"Traducao": "Saudação (Em pé)"
+		"Traducao": "Saudação (Em pé)",
+		"Audio": "Ritsurei.mp3"
 	},
 	{
 		"Id": 12,
 		"Palavra": "Shihan",
-		"Traducao": "Grande Meste"
+		"Traducao": "Grande Meste",
+		"Audio": "Shihan.mp3"
 	},
 	{
 		"Id": 13,
 		"Palavra": "Sempai",
-		"Traducao": "Aluno Superior"
+		"Traducao": "Aluno Superior",
+		"Audio": "Sempai.mp3"
 	},
 	{
 		"Id": 14,
 		"Palavra": "Shinden Ni Rei",
-		"Traducao": "Saudação ao Dojo"
+		"Traducao": "Saudação ao Dojo",
+		"Audio": "Shinden-Ni-Rei.mp3"
 	},
 	{
 		"Id": 15,
 		"Palavra": "Sensei Ni Rei",
-		"Traducao": "Cumprimentando o professor"
+		"Traducao": "Cumprimentando o professor",
+		"Audio": "Sensei-Ni-Rei.mp3"
 	},
 	{
 		"Id": 16,
 		"Palavra": "Shidoin Ni Rei",
-		"Traducao": "Saudação ao instrutor/aluno de nível após professor"
+		"Traducao": "Saudação ao instrutor/aluno de nível após professor",
+		"Audio": "Shidoin-Ni-Rei.mp3"
 	},
 	{
 		"Id": 17,
 		"Palavra": "Otagai Ni Rei",
-		"Traducao": "Saudação entre os colegas"
+		"Traducao": "Saudação entre os colegas",
+		"Audio": "Otagai-Ni-Rei.mp3"
 	},
 	{
 		"Id": 18,
 		"Palavra": "Onegai Shimasu",
-		"Traducao": "Por favor, me ensine"
+		"Traducao": "Por favor, me ensine",
+		"Audio": "Onegai-Shimasu.mp3"
 	},
 	{
 		"Id": 19,
 		"Palavra": "Arigato Gozai Mashita",
-		"Traducao": "Muito obrigado!"
+		"Traducao": "Muito obrigado!",
+		"Audio": "Arigato-Gozai-Mashita.mp3"
 	},
 	{
 		"Id": 20,
 		"Palavra": "Karategi",
-		"Traducao": "Traje do Karatê"
+		"Traducao": "Traje do Karatê",
+		"Audio": "Karategi.mp3"
 	},
 	{
 		"Id": 21,
 		"Palavra": "Uwagi",
-		"Traducao": "Jaqueta"
+		"Traducao": "Jaqueta",
+		"Audio": "Uwagi.mp3"
 	},
 	{
 		"Id": 22,
 		"Palavra": "Zubon",
-		"Traducao": "Calça"
+		"Traducao": "Calça",
+		"Audio": "Zubon.mp3"
 	}
 	,
 	{
 		"Id": 23,
 		"Palavra": "Obi",
-		"Traducao": "Faixa"
+		"Traducao": "Faixa",
+		"Audio": "Obi.mp3"
 	}
 	,
 	{
 		"Id": 24,
 		"Palavra": "Dan",
-		"Traducao": "Nível ou classificação"
+		"Traducao": "Nível ou classificação",
+		"Audio": "Dan.mp3"
 	},
 	{
 		"Id": 25,
 		"Palavra": "Mudansha",
-		"Traducao": "Grau abaixo da faixa preta"
+		"Traducao": "Grau abaixo da faixa preta",
+		"Audio": "Mudansha.mp3"
 	},
 	{
 		"Id": 26,
 		"Palavra": "Yudansha",
-		"Traducao": "Graus de faixa preta"
+		"Traducao": "Graus de faixa preta",
+		"Audio": "Yudansha.mp3"
 	},
 	{
 		"Id": 27,
 		"Palavra": "Shugo",
-		"Traducao": "Alinhar-se"
+		"Traducao": "Alinhar-se",
+		"Audio": "Shugo.mp3"
 	},
 	{
 		"Id": 28,
 		"Palavra": "Kiotsuke",
-		"Traducao": "Atenção"
+		"Traducao": "Atenção",
+		"Audio": "Kiotsuke.mp3"
 	},
 	{
 		"Id": 29,
 		"Palavra": "Seiza",
-		"Traducao": "Sentado ( na posição de joelho, sobre calcanhares)"
+		"Traducao": "Sentado ( na posição de joelho, sobre calcanhares)",
+		"Audio": "Seiza.mp3"
 	},
 	{
 		"Id": 30,
 		"Palavra": "Kiritsu",
-		"Traducao": "Levante-se"
+		"Traducao": "Levante-se",
+		"Audio": "Kiritsu.mp3"
 	},
 	{
 		"Id": 31,
 		"Palavra": "Mokuso",
-		"Traducao": "Concentra-se"
+		"Traducao": "Concentra-se",
+		"Audio": "Mokuso.mp3"
 	},
 	{
 		"Id": 32,
 		"Palavra": "Mokuso Yame",
-		"Traducao": "Fim da concentração"
+		"Traducao": "Fim da concentração",
+		"Audio": "Mokuso-Yame.mp3"
 	},
 	{
 		"Id": 33,
 		"Palavra": "Yoi",
-		"Traducao": "Prepara, atenção"
+		"Traducao": "Prepara, atenção",
+		"Audio": "Yoi.mp3"
 	},
 	{
 		"Id": 34,
 		"Palavra": "Kamae",
-		"Traducao": "Em guarda"
+		"Traducao": "Em guarda",
+		"Audio": "Kamae.mp3"
 	},
 	{
 		"Id": 35,
 		"Palavra": "Hajime",
-		"Traducao": "Começar"
+		"Traducao": "Começar",
+		"Audio": "Hajime.mp3"
 	},
 	{
 		"Id": 36,
 		"Palavra": "Yame",
-		"Traducao": "Parar"
+		"Traducao": "Parar",
+		"Audio": "Yame.mp3"
 	}
 	,
 	{
 		"Id": 37,
 		"Palavra": "Yasume",
-		"Traducao": "Descanso"
+		"Traducao": "Descanso",
+		"Audio": "Yasume.mp3"
 	}
 	,
 	{
 		"Id": 38,
 		"Palavra": "Barai",
-		"Traducao": "Varredura"
+		"Traducao": "Varredura",
+		"Audio": "ZaBarainshin.mp3"
 	}
 	,
 	{
 		"Id": 39,
 		"Palavra": "Bunkai",
-		"Traducao": "Aplicação da prática das técnicas de um kata"
+		"Traducao": "Aplicação da prática das técnicas de um kata",
+		"Audio": "Bunkai.mp3"
 	},
 	{
 		"Id": 40,
 		"Palavra": "Chakugan",
-		"Traducao": "Olhar"
+		"Traducao": "Olhar",
+		"Audio": "Chakugan.mp3"
 	},
 	{
 		"Id": 41,
 		"Palavra": "Chi ma",
-		"Traducao": "Distância curta"
+		"Traducao": "Distância curta",
+		"Audio": "Chi-ma.mp3"
 	},
 	{
 		"Id": 42,
 		"Palavra": "Chudan",
-		"Traducao": "Nível médio, centro do corpo"
+		"Traducao": "Nível médio, centro do corpo",
+		"Audio": "Chudan.mp3"
 	},
 	{
 		"Id": 43,
 		"Palavra": "Dachi",
-		"Traducao": "Tecnica"
+		"Traducao": "Tecnica",
+		"Audio": "Dachi.mp3"
 	},
 	{
 		"Id": 44,
 		"Palavra": "Domto",
-		"Traducao": "Respiração normal"
+		"Traducao": "Respiração normal",
+		"Audio": "Domto.mp3"
 	},
 	{
 		"Id": 45,
 		"Palavra": "Embusen",
-		"Traducao": "Linha de realização do kata"
+		"Traducao": "Linha de realização do kata",
+		"Audio": "Embusen.mp3"
 	},
 	{
 		"Id": 46,
 		"Palavra": "Fumikiri",
-		"Traducao": "Golpe Cortante"
+		"Traducao": "Golpe Cortante",
+		"Audio": "Fumikiri.mp3"
 	},
 	{
 		"Id": 47,
 		"Palavra": "Fumikomi",
-		"Traducao": "Golpe esmagador"
+		"Traducao": "Golpe esmagador",
+		"Audio": "Fumikomi.mp3"
 	},
 	{
 		"Id": 48,
 		"Palavra": "Gedan",
-		"Traducao": "Nível baixo, parte inferior da barriga e pernas"
+		"Traducao": "Nível baixo, parte inferior da barriga e pernas",
+		"Audio": "Gedan.mp3"
 	},
 	{
 		"Id": 49,
 		"Palavra": "Geri",
-		"Traducao": "Técnica de pé (tanto ataques-chutes- e defesas)"
+		"Traducao": "Técnica de pé (tanto ataques-chutes- e defesas)",
+		"Audio": "Geri.mp3"
 	},
 	{
 		"Id": 50,
 		"Palavra": "Gyaku Kaiten",
-		"Traducao": "Giro de quadril contrário ao sentido da técnica"
+		"Traducao": "Giro de quadril contrário ao sentido da técnica",
+		"Audio": "Gyaku-Kaiten.mp3"
 	},
 	{
 		"Id": 51,
 		"Palavra": "Hammi",
-		"Traducao": "Posição diagonal"
+		"Traducao": "Posição diagonal",
+		"Audio": "Hammi.mp3"
 	},
 	{
 		"Id": 52,
 		"Palavra": "Hara",
-		"Traducao": "Barriga"
+		"Traducao": "Barriga",
+		"Audio": "Hara.mp3"
 	},
 	{
 		"Id": 53,
 		"Palavra": "Hidari",
-		"Traducao": "Esquerda"
+		"Traducao": "Esquerda",
+		"Audio": "Hidari.mp3"
 	},
 	{
 		"Id": 54,
 		"Palavra": "Hiji ou Empi",
-		"Traducao": "Técnica de Cotovelo"
+		"Traducao": "Técnica de Cotovelo",
+		"Audio": "Hiji-Empi.mp3"
 	},
 	{
 		"Id": 55,
 		"Palavra": "Hikiashi",
-		"Traducao": "Retratação rápida do pé após o chute"
+		"Traducao": "Retratação rápida do pé após o chute",
+		"Audio": "Hikiashi.mp3"
 	},
 	{
 		"Id": 56,
 		"Palavra": "Hikite",
-		"Traducao": "Retrocesso do braço aposto ao que golpeia"
+		"Traducao": "Retrocesso do braço aposto ao que golpeia",
+		"Audio": "Hikite.mp3"
 	},
 	{
 		"Id": 57,
 		"Palavra": "Hiza ou Hittsui",
-		"Traducao": "Técnica de Joelho"
+		"Traducao": "Técnica de Joelho",
+		"Audio": "Hiza-Hittsui.mp3"
 	},
 	{
 		"Id": 58,
 		"Palavra": "Jodan",
-		"Traducao": "Parte superior do corpo"
+		"Traducao": "Parte superior do corpo",
+		"Audio": "Jodan.mp3"
 	},
 	{
 		"Id": 59,
 		"Palavra": "Kaiten",
-		"Traducao": "Giro quadril"
+		"Traducao": "Giro quadril",
+		"Audio": "Kaiten.mp3"
 	},
 	{
 		"Id": 60,
 		"Palavra": "Kata",
-		"Traducao": "Forma, combinação de técnicas de ataque e defesa"
+		"Traducao": "Forma, combinação de técnicas de ataque e defesa",
+		"Audio": "Kata.mp3"
 	},
 	{
 		"Id": 61,
 		"Palavra": "Keage",
-		"Traducao": "Para cima"
+		"Traducao": "Para cima",
+		"Audio": "Keage.mp3"
 	},
 	{
 		"Id": 62,
 		"Palavra": "Kebanashi",
-		"Traducao": "Impactante"
+		"Traducao": "Impactante",
+		"Audio": "Kebanashi.mp3"
 	},
 	{
 		"Id": 63,
 		"Palavra": "Kekomi",
-		"Traducao": "Penetrante"
+		"Traducao": "Penetrante",
+		"Audio": "Kekomi.mp3"
 	},
 	{
 		"Id": 64,
 		"Palavra": "Ki",
-		"Traducao": "Energia interna"
+		"Traducao": "Energia interna",
+		"Audio": "Ki.mp3"
 	},
 	{
 		"Id": 65,
 		"Palavra": "Kiai",
-		"Traducao": "Grito (liberação de energia concentrada)"
+		"Traducao": "Grito (liberação de energia concentrada)",
+		"Audio": "Kiai.mp3"
 	},
 	{
 		"Id": 66,
 		"Palavra": "Kime",
-		"Traducao": "Concentração de energia"
+		"Traducao": "Concentração de energia",
+		"Audio": "Kime.mp3"
 	},
 	{
 		"Id": 67,
 		"Palavra": "Kokyu",
-		"Traducao": "Respirando"
+		"Traducao": "Respirando",
+		"Audio": "Kokyu.mp3"
 	},
 	{
 		"Id": 68,
 		"Palavra": "Kumite",
-		"Traducao": "Combate"
+		"Traducao": "Combate",
+		"Audio": "Kumite.mp3"
 	},
 	{
 		"Id": 69,
 		"Palavra": "Maai",
-		"Traducao": "Conhecimento de distância"
+		"Traducao": "Conhecimento de distância",
+		"Audio": "Maai.mp3"
 	}
 	,
 	{
 		"Id": 70,
 		"Palavra": "Mae",
-		"Traducao": "Posição frontal"
+		"Traducao": "Posição frontal",
+		"Audio": "Mae.mp3"
 	},
 	{
 		"Id": 71,
 		"Palavra": "Migi",
-		"Traducao": "Direita"
+		"Traducao": "Direita",
+		"Audio": "Migi.mp3"
 	},
 	{
 		"Id": 72,
 		"Palavra": "Seiken",
-		"Traducao": "Parte do punho que é feito as técnicas de zuki"
+		"Traducao": "Parte do punho que é feito as técnicas de zuki",
+		"Audio": "Seiken.mp3"
 	},
 	{
 		"Id": 73,
 		"Palavra": "Tanden",
-		"Traducao": "É um ponto localizado no abdômen, onde se encontra a energia (Ki)"
+		"Traducao": "É um ponto localizado no abdômen, onde se encontra a energia (Ki)",
+		"Audio": "Tanden.mp3"
 	},
 	{
 		"Id": 74,
 		"Palavra": "Timing",
-		"Traducao": "Antecipação"
+		"Traducao": "Antecipação",
+		"Audio": "Timing.mp3"
 	},
 	{
 		"Id": 75,
 		"Palavra": "To ma",
-		"Traducao": "Longa distância"
+		"Traducao": "Longa distância",
+		"Audio": "To-ma.mp3"
 	},
 	{
 		"Id": 76,
 		"Palavra": "Tori",
-		"Traducao": "O atacante (ao treinar técnicas de parceiros)"
+		"Traducao": "O atacante (ao treinar técnicas de parceiros)",
+		"Audio": "Tori.mp3"
 	},
 	{
 		"Id": 77,
 		"Palavra": "Tsuki (Zuki)",
-		"Traducao": "Técnica de soco direto"
+		"Traducao": "Técnica de soco direto",
+		"Audio": "Tsuki-Zuki.mp3"
 	},
 	{
 		"Id": 78,
 		"Palavra": "Uchi",
-		"Traducao": "Técnica de punho circular; Técnica de mão aberta"
+		"Traducao": "Técnica de punho circular; Técnica de mão aberta",
+		"Audio": "Uchi.mp3"
 	},
 	{
 		"Id": 79,
 		"Palavra": "Uke",
-		"Traducao": "Técnica de defesa; Bloqueio"
+		"Traducao": "Técnica de defesa; Bloqueio",
+		"Audio": "Uke.mp3"
 	},
 	{
 		"Id": 80,
 		"Palavra": "Ukete",
-		"Traducao": "Aquele que defenda (ao treinar técnicas em pares)"
+		"Traducao": "Aquele que defenda (ao treinar técnicas em pares)",
+		"Audio": "Ukete.mp3"
 	},
 	{
 		"Id": 81,
 		"Palavra": "Ushi Ma",
-		"Traducao": "Distância Média"
+		"Traducao": "Distância Média",
+		"Audio": "Ushi-Ma.mp3"
 	},
 	{
 		"Id": 82,
 		"Palavra": "Ushiro",
-		"Traducao": "Técnica executada para trás"
+		"Traducao": "Técnica executada para trás",
+		"Audio": "Ushiro.mp3"
 	},
 	{
 		"Id": 83,
 		"Palavra": "Yoko",
-		"Traducao": "Posição lateral"
+		"Traducao": "Posição lateral",
+		"Audio": "Yoko.mp3"
 	},
 	{
 		"Id": 84,
 		"Palavra": "Yun Kaiten",
-		"Traducao": "Giro do quadril na mesma diração da técnica"
+		"Traducao": "Giro do quadril na mesma diração da técnica",
+		"Audio": "Yun-Kaiten.mp3"
 	},
 	{
 		"Id": 85,
 		"Palavra": "Zanshin",
-		"Traducao": "Atitude mental de alerta"
+		"Traducao": "Atitude mental de alerta",
+		"Audio": "Zanshin.mp3"
 	}
 ]

@@ -1,53 +1,54 @@
 <template>
-  <div class="q-pa-md">
-    <q-header bordered>
-      <q-toolbar class="bg-dark">
-        <q-toolbar-title class="text-center">
-          <q-btn round color="amber" to="/" text-color="black" icon="home" />
-        </q-toolbar-title>
-        <q-input color="yellow" dark filled v-model="palavra" label="Buscar">
-          <template v-slot:prepend>
-            <q-icon name="search" />
-          </template>
-          <template v-slot:append>
-            <q-icon name="close" @click="nomePustura = ''" class="cursor-pointer" />
-          </template>
-        </q-input>
-      </q-toolbar>
-    </q-header>
-    <div class="row q-col-gutter-none justify-center q-mb-xs">
-      <div class="col-12 text-center text-bold sub-title">--- Vocabulário ---</div>
-    </div>
-    <div v-for="palavra in palavras" :key="palavra.Id" class="row q-col-gutter-none justify-center q-mb-sm">
-      <div class="col-12">
-        <q-chip color="white" size="lg">
-          <q-avatar><img :src="getJapaoPath"></q-avatar>
-          {{ palavra.Palavra }}
-        </q-chip>
+  <q-layout view="hHh lpR fFf">
+    <header-with-logos titulo="Vocabulário"></header-with-logos>
+    <q-page-container>
+      <div class="row justify-center">
+        <div class="col-12 q-pa-xs q-mb-md div-border" v-for="palavra in palavras" :key="palavra.Id">
+          <div class="chip">
+            <div class="palavra">
+              <q-avatar><img :src="getJapaoPath"></q-avatar>
+              {{ palavra.Palavra }}
+            </div>
+              <q-btn @click.stop="getAudioPath(palavra)" label="Ouvir"  color="primary" flat  icon="volume_up" />
+          </div>
+          <div class="chip">
+            <p><q-avatar size="md"><img :src="getBrasilPath"></q-avatar> {{ palavra.Traducao }}</p>
+          </div>
+        </div>
       </div>
-      <div class="col-12 div-border">
-        <p><q-avatar size="md"><img :src="getBrasilPath"></q-avatar> {{ palavra.Traducao }}</p>
+    </q-page-container>
+
+    <q-footer class="bg-white text-black text-center items-center">
+      <div class="row justify-center">
+        <div class="col-10 q-pa-sm">
+          <q-input filled v-model="palavra" label="Buscar">
+            <template v-slot:prepend>
+              <q-icon name="search" />
+            </template>
+            <template v-slot:append>
+              <q-icon name="close" @click="palavra = ''" class="cursor-pointer" />
+            </template>
+          </q-input>
+        </div>
+        <div class="col-6">
+          <q-btn color="primary" @click="scrollToTop" text-color="black" icon="arrow_upward" label="Inicio" />
+        </div>
+        <div class="col-6">
+          <q-btn color="secondary" to="/" text-color="black" icon="arrow_back" label="Voltar" />
+        </div>
       </div>
-    </div>
-    <q-footer elevated>
-      <q-toolbar class="bg-dark">
-        <q-toolbar-title>
-        <q-btn round color="amber" to="/" text-color="black" icon="home" />
-      </q-toolbar-title>
-      <q-btn class="q-ml-sm" round color="green" text-color="black" icon="arrow_upward" @click="scrollToTop" />
-      </q-toolbar>
     </q-footer>
-  </div>
+  </q-layout>
 </template>
 
 <script>
 import { onMounted, ref } from 'vue';
 import { usePalavrasStore } from '@/stores/palavrasStore.js';
+import HeaderWithLogos from '@/components/HeaderWithLogos.vue';
 
 export default {
   name: 'ListaPalavras',
-  components: {
-  },
+  components: { HeaderWithLogos },
   data() {
     return {
       palavra: '',
@@ -71,15 +72,17 @@ export default {
     limparFiltros() {
       this.palavra = '';
     },
-    getImagePath() {
-      return require(`@/assets/images/logo.png`);
-    },
     scrollToTop() {
       window.scrollTo({
         top: 0,
         behavior: 'smooth' // Rola suavemente para o topo
       });
-    }
+    },
+    getAudioPath(palavra) {
+      const palavraAudio = palavra.Audio;
+      const audio = new Audio(require(`@/assets/sounds/palavras/${palavraAudio}`));
+      audio.play();
+    },
   },
   computed: {
     getBrasilPath() {
@@ -98,7 +101,16 @@ export default {
 
 </script>
 <style scoped>
-.div-border{
+.div-border {
   border-bottom: 2px solid #FBC920;
+}
+
+.chip {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.palavra{
+  font-size: 20px;
 }
 </style>

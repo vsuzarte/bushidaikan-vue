@@ -22,6 +22,7 @@ export default class PalavrasService {
     const correctOption = {
       palavra: currentQuestion.Palavra,
       traducao: currentQuestion.Traducao,
+      audio: currentQuestion.Audio,
       isCorrect: true,
     };
     

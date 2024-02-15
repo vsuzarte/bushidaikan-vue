@@ -30,12 +30,14 @@ export default class QuestionService {
       imagem: currentQuestion.Imagem,
       tecnicaBR: currentQuestion.TecnicaBR,
       tecnicaJP: currentQuestion.TecnicaJP,
+      audio: currentQuestion.Audio,
       isCorrect: true,
     };
     
     const incorrects = this.shuffleArray(otherTecnicas).slice(0, 3);
     const incorrectOptions = incorrects.map(incorrectTecnica => ({
       nome: incorrectTecnica.Nome,
+      audio: incorrectTecnica.Audio,
       isCorrect: false,
     }));
     

@@ -57,6 +57,7 @@ export default {
     selectAwnser(option, index) {
       this.selectedQuestion = option;
       this.selectedButtonIndex = index;
+      this.getAudioPath(option.audio);
     },
     checkAwnser() {
       this.btnIsConfirm = true;
@@ -79,7 +80,11 @@ export default {
         const audio = new Audio(require(`@/assets/sounds/negative.mp3`));
         audio.play();
       }
-    }
+    },
+    getAudioPath(tecnica) {
+      const audio = new Audio(require(`@/assets/sounds/tecnicas/${tecnica}`));
+      audio.play();
+    },
   },
   computed: {
     correctOption() {
