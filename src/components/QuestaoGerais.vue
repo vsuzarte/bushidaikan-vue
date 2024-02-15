@@ -50,7 +50,7 @@ export default {
   name: 'QuestaoPalavra',
   props: {
     currentQuestion: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },
