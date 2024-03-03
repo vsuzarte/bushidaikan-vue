@@ -4,5 +4,13 @@
   "webDir": "dist",
   "server": {
     "androidScheme": "https"
+  },
+  "signingConfig": {
+    "release": {
+      "storeFile": "android.keystore",
+      "storePassword": "vitor123",
+      "keyAlias": "bushi",
+      "keyPassword": "191017"
+    }
   }
 }
