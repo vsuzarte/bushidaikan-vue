@@ -3,20 +3,11 @@
     <header-with-logos titulo="Bushidaikan"></header-with-logos>
     <q-page-container class="q-page-container-custom">
       <div class="row">
-        <div class="col-12 text-center">
-          <span class="text-bold title">OKINAWA SHORIN-RYU</span>
-        </div>
         <div class="col-12 text-center text-bold">
           <span class="text-bold title">KARATÊ-DO BUSHIDAIKAN</span>
         </div>
         <div class="col-12 text-center">
           <q-img :src="getImagePath()" :ratio="1" class="imagem"/>
-        </div>
-        <div class="col-12 text-center">
-          <span class="sub-title text-bold ">Karate-Do de</span>
-        </div>
-        <div class="col-12 text-center">
-          <span class="sub-title text-bold ">OKINAWA SHORIN-RYU</span>
         </div>
         <div class="col-12 text-center text-bold">
           <p class="text-bold">Manual Auxiliar de Treino</p>

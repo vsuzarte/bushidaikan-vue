@@ -1,9 +1,6 @@
 <template>
     <div class="row q-col-gutter-none justify-center">
           <div class="col-12 text-center">
-            <span class="sub-title">OKINAWA SHORIN-RYU</span>
-          </div>
-          <div class="col-12 text-center">
             <span class="sub-title">KARATÊ-DO BUSHIDAIKAN</span>
           </div>
           <div v-if="score > 0" class="col-12 text-center">
