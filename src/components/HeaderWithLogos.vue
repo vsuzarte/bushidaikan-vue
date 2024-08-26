@@ -7,9 +7,6 @@
         <q-toolbar-title>
           {{titulo}}
         </q-toolbar-title>
-        <q-avatar>
-            <img :src="logo2">
-          </q-avatar>
       </q-toolbar>
     </q-header>
 </template>
@@ -26,9 +23,6 @@ export default {
   computed: {
     logo() {
       return require(`@/assets/images/logo.png`);
-    },
-    logo2() {
-      return require(`@/assets/images/logo2.png`);
     },
   }
 }

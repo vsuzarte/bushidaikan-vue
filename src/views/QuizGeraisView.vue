@@ -85,9 +85,6 @@ export default {
     getLogoPath() {
       return require(`@/assets/images/logo.png`);
     },
-    getLogoPath2() {
-      return require(`@/assets/images/logo2.png`);
-    },
     getSocoPath() {
       return require(`@/assets/images/punho.png`);
     },

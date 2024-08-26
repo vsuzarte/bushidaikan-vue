@@ -37,8 +37,6 @@
       <div class="col-12 text-center items-center">
         <p class="text-bold q-mt-sm">Renshi</p>
         <p class="text-bold">Maycon H. Sichelschimidt</p>
-        <p>Copyright © 2023 BUSHIDAIKAN-RYU.</p>
-        <p>Todos os Direitos Reservados | CNPJ: 46.420.853/0001-83</p>
       </div>
     </q-footer>
   </q-layout>
@@ -55,9 +53,6 @@ export default {
   methods: {
     getImagePath() {
       return require(`@/assets/images/logo.png`);
-    },
-    getLogoPath2() {
-      return require(`@/assets/images/logo2.png`);
     },
   }
 }
